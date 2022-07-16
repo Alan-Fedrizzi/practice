@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="css/main.css" />
+
+    <title>MEDSoft</title>
+  </head>
+  <body>
+    <div class="container">
+      <nav class="nav">
+        <div class="nav__logo-box">
+          <img
+            src="./assets/img/logo.png"
+            alt="MEDSoft logo"
+            class="nav__logo"
+          />
+          <h2 class="heading-secondary">MEDSoft</h2>
+        </div>
+
+        <div class="nav__menu">
+          <ul class="nav-list">
+            <li class="nav-list__item">
+              <a href="#" class="nav-list__link nav-list__link--active">
+                <ion-icon
+                  name="play-circle-outline"
+                  class="nav-list__icon"
+                ></ion-icon>
+                <span>Aulas</span>
+              </a>
+            </li>
+            <li class="nav-list__item">
+              <a href="#" class="nav-list__link">
+                <ion-icon name="book-outline" class="nav-list__icon"></ion-icon>
+                <span>Materiais</span>
+              </a>
+            </li>
+            <li class="nav-list__item">
+              <a href="#" class="nav-list__link">
+                <ion-icon
+                  name="checkbox-outline"
+                  class="nav-list__icon"
+                ></ion-icon>
+                <span>Questões</span>
+              </a>
+            </li>
+          </ul>
+
+          <div class="accordion open">
+            <div class="accordion__header">
+              <div class="subsection">
+                <h3 class="heading-tertiary">Mentoria</h3>
+                <button class="subsection__button">
+                  <ion-icon
+                    name="chevron-down-outline"
+                    class="subsection__icon"
+                  ></ion-icon>
+                </button>
+              </div>
+            </div>
+            <div class="accordion__content">
+              <ul class="nav-list">
+                <li class="nav-list__item">
+                  <a href="#" class="nav-list__link">
+                    <ion-icon
+                      name="compass-outline"
+                      class="nav-list__icon"
+                    ></ion-icon>
+                    <span>Orientações</span>
+                  </a>
+                </li>
+                <li class="nav-list__item">
+                  <a href="#" class="nav-list__link">
+                    <ion-icon
+                      name="timer-outline"
+                      class="nav-list__icon"
+                    ></ion-icon>
+                    <span>Desempenho</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="accordion open">
+            <div class="accordion__header">
+              <div class="subsection">
+                <h3 class="heading-tertiary">Geral</h3>
+                <button class="subsection__button">
+                  <ion-icon
+                    name="chevron-down-outline"
+                    class="subsection__icon"
+                  ></ion-icon>
+                </button>
+              </div>
+            </div>
+            <div class="accordion__content">
+              <ul class="nav-list">
+                <li class="nav-list__item">
+                  <a href="#" class="nav-list__link">
+                    <ion-icon
+                      name="grid-outline"
+                      class="nav-list__icon"
+                    ></ion-icon>
+                    <span>Medcode</span>
+                  </a>
+                </li>
+                <li class="nav-list__item">
+                  <a href="#" class="nav-list__link">
+                    <ion-icon
+                      name="albums-outline"
+                      class="nav-list__icon"
+                    ></ion-icon>
+                    <span>Slides de Aula</span>
+                  </a>
+                </li>
+                <li class="nav-list__item">
+                  <a href="#" class="nav-list__link">
+                    <ion-icon
+                      name="chatbox-ellipses-outline"
+                      class="nav-list__icon"
+                    ></ion-icon>
+                    <span>Dúvidas Acadêmicas</span>
+                  </a>
+                </li>
+                <li class="nav-list__item">
+                  <a href="#" class="nav-list__link">
+                    <ion-icon
+                      name="calendar-clear-outline"
+                      class="nav-list__icon"
+                    ></ion-icon>
+                    <span>Cronograma</span>
+                  </a>
+                </li>
+                <li class="nav-list__item">
+                  <a href="#" class="nav-list__link">
+                    <ion-icon
+                      name="gift-outline"
+                      class="nav-list__icon"
+                    ></ion-icon>
+                    <span>Bônus</span>
+                  </a>
+                </li>
+                <li class="nav-list__item">
+                  <a href="#" class="nav-list__link">
+                    <ion-icon
+                      name="bandage-outline"
+                      class="nav-list__icon"
+                    ></ion-icon>
+                    <span>Drogas</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="accordion open">
+            <div class="accordion__header">
+              <div class="subsection">
+                <h3 class="heading-tertiary">Treinamento</h3>
+                <button class="subsection__button">
+                  <ion-icon
+                    name="chevron-down-outline"
+                    class="subsection__icon"
+                  ></ion-icon>
+                </button>
+              </div>
+            </div>
+            <div class="accordion__content">
+              <ul class="nav-list">
+                <li class="nav-list__item">
+                  <a href="#" class="nav-list__link">
+                    <ion-icon
+                      name="document-text-outline"
+                      class="nav-list__icon"
+                    ></ion-icon>
+                    <span>Simulados</span>
+                  </a>
+                </li>
+                <li class="nav-list__item">
+                  <a href="#" class="nav-list__link">
+                    <ion-icon
+                      name="play-circle-outline"
+                      class="nav-list__icon"
+                    ></ion-icon>
+                    <span>Multimídia</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <button class="nav__button">
+            <ion-icon
+              name="chevron-back-outline"
+              class="nav__icon nav__icon--margin-right"
+            ></ion-icon>
+            <ion-icon name="chevron-back-outline" class="nav__icon"></ion-icon>
+          </button>
+        </div>
+
+        <button class="nav-mobile">
+          <ion-icon
+            name="menu-outline"
+            class="nav-mobile__icon nav-mobile__icon--menu"
+          ></ion-icon>
+          <ion-icon
+            name="close-outline"
+            class="nav-mobile__icon nav-mobile__icon--close"
+          ></ion-icon>
+        </button>
+      </nav>
+
+      <div class="container__interno">
+        <section class="section-course">
+          <div class="section-course__text-box">
+            <button class="section-course__button">
+              <ion-icon
+                name="chevron-back-outline"
+                class="section-course__icon"
+              ></ion-icon>
+            </button>
+            <h1 class="heading-primary">CIR 1 &ndash; M. Nicolich</h1>
+          </div>
+
+          <div class="section-course__interno">
+            <div class="course">
+              <div class="course__text-box">
+                <h3 class="heading-tertiary u-margin-bottom-small">NEF 1</h3>
+                <p class="course__text">Arritimias Cardíacas, Morte Súbita</p>
+              </div>
+              <div class="chart" style="--porcentagem-chart: 9">
+                <div class="chart__external">
+                  <div class="chart__internal">
+                    <span class="chart__text">9%</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- ACCORDION   -->
+            <div class="accordion">
+              <div class="accordion__header">
+                <div class="active-class">
+                  <div class="active-class__box">
+                    <div class="thumb">
+                      <img
+                        src="./assets/img/foto.png"
+                        alt="Video of a class"
+                        class="thumb__img"
+                      />
+                      <div class="progress" style="--porcentagem-progress: 90">
+                        &nbsp;
+                      </div>
+                      <ion-icon
+                        name="play-circle-outline"
+                        class="thumb__icon"
+                      ></ion-icon>
+                    </div>
+                    <div class="active-class__text-box">
+                      <p class="active-class__text">Aulas de resumo</p>
+                      <div class="duration">
+                        <ion-icon
+                          name="time-outline"
+                          class="duration__icon"
+                        ></ion-icon>
+                        <span class="duration__time">00:07:25</span>
+                      </div>
+                    </div>
+                  </div>
+                  <button class="active-class__button">
+                    <ion-icon
+                      name="chevron-down-outline"
+                      class="active-class__icon"
+                    ></ion-icon>
+                  </button>
+                </div>
+              </div>
+              <!-- ! accordion header -->
+
+              <!-- accordion content -->
+              <div class="accordion__content">
+                <ul class="class-list">
+                  <li class="class-list__item">
+                    <div class="class-list__name">
+                      <ion-icon
+                        name="play-circle-outline"
+                        class="class-list__icon class-list__icon--green"
+                      ></ion-icon>
+                      <p class="class-list__text">Aulas de Resumo</p>
+                    </div>
+                    <div class="class-list__time">
+                      <div class="duration">
+                        <span class="duration__time">00:07:25</span>
+                      </div>
+                      <button class="class-list__button">
+                        <ion-icon
+                          name="chevron-forward-outline"
+                          class="class-list__icon"
+                        ></ion-icon>
+                      </button>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <!-- ! accordion content -->
+            </div>
+            <!-- ! ACCORDION   -->
+
+            <!-- ACCORDION   -->
+            <div class="accordion open">
+              <div class="accordion__header">
+                <div class="active-class">
+                  <div class="active-class__box">
+                    <div class="thumb">
+                      <img
+                        src="./assets/img/foto.png"
+                        alt="Video of a class"
+                        class="thumb__img"
+                      />
+                      <div class="progress" style="--porcentagem-progress: 90">
+                        &nbsp;
+                      </div>
+                      <ion-icon
+                        name="play-circle-outline"
+                        class="thumb__icon"
+                      ></ion-icon>
+                    </div>
+                    <div class="active-class__text-box">
+                      <p class="active-class__text">
+                        Estômago e Esôfago; Intestino; Pâncreas
+                      </p>
+                      <div class="duration">
+                        <ion-icon
+                          name="time-outline"
+                          class="duration__icon"
+                        ></ion-icon>
+                        <span class="duration__time">00:53:13</span>
+                      </div>
+                    </div>
+                  </div>
+                  <button class="active-class__button">
+                    <ion-icon
+                      name="chevron-down-outline"
+                      class="active-class__icon"
+                    ></ion-icon>
+                  </button>
+                </div>
+              </div>
+              <!-- ! accordion header -->
+
+              <!-- accordion content -->
+              <div class="accordion__content">
+                <ul class="class-list">
+                  <li class="class-list__item">
+                    <div class="class-list__name">
+                      <ion-icon
+                        name="play-circle-outline"
+                        class="class-list__icon class-list__icon--green"
+                      ></ion-icon>
+                      <p class="class-list__text">Síndrome Coronariana Aguda</p>
+                    </div>
+                    <div class="class-list__time">
+                      <div class="duration">
+                        <span class="duration__time">00:31:00</span>
+                      </div>
+                      <button class="class-list__button">
+                        <ion-icon
+                          name="chevron-forward-outline"
+                          class="class-list__icon"
+                        ></ion-icon>
+                      </button>
+                    </div>
+                  </li>
+                  <li class="class-list__item">
+                    <div class="class-list__name">
+                      <ion-icon
+                        name="play-circle-outline"
+                        class="class-list__icon class-list__icon--green"
+                      ></ion-icon>
+                      <p class="class-list__text">Síndrome Coronariana Aguda</p>
+                    </div>
+                    <div class="class-list__time">
+                      <div class="duration">
+                        <span class="duration__time">00:31:00</span>
+                      </div>
+                      <button class="class-list__button">
+                        <ion-icon
+                          name="chevron-forward-outline"
+                          class="class-list__icon"
+                        ></ion-icon>
+                      </button>
+                    </div>
+                  </li>
+                  <li class="class-list__item">
+                    <div class="class-list__name">
+                      <ion-icon
+                        name="play-circle-outline"
+                        class="class-list__icon class-list__icon--green"
+                      ></ion-icon>
+                      <p class="class-list__text">Síndrome Coronariana Aguda</p>
+                    </div>
+                    <div class="class-list__time">
+                      <div class="duration">
+                        <span class="duration__time">00:31:00</span>
+                      </div>
+                      <button class="class-list__button">
+                        <ion-icon
+                          name="chevron-forward-outline"
+                          class="class-list__icon"
+                        ></ion-icon>
+                      </button>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <!-- ! accordion content -->
+            </div>
+            <!-- ! ACCORDION   -->
+
+            <!-- ACCORDION   -->
+            <div class="accordion">
+              <div class="accordion__header">
+                <div class="active-class">
+                  <div class="active-class__box">
+                    <div class="thumb">
+                      <img
+                        src="./assets/img/foto.png"
+                        alt="Video of a class"
+                        class="thumb__img"
+                      />
+                      <div class="progress" style="--porcentagem-progress: 90">
+                        &nbsp;
+                      </div>
+                      <ion-icon
+                        name="play-circle-outline"
+                        class="thumb__icon"
+                      ></ion-icon>
+                    </div>
+                    <div class="active-class__text-box">
+                      <p class="active-class__text">
+                        Estômago e Esôfago; Intestino; Pâncreas
+                      </p>
+                      <div class="duration">
+                        <ion-icon
+                          name="time-outline"
+                          class="duration__icon"
+                        ></ion-icon>
+                        <span class="duration__time">00:53:13</span>
+                      </div>
+                    </div>
+                  </div>
+                  <button class="active-class__button">
+                    <ion-icon
+                      name="chevron-down-outline"
+                      class="active-class__icon"
+                    ></ion-icon>
+                  </button>
+                </div>
+              </div>
+              <!-- ! accordion header -->
+
+              <!-- accordion content -->
+              <div class="accordion__content">
+                <ul class="class-list">
+                  <li class="class-list__item">
+                    <div class="class-list__name">
+                      <ion-icon
+                        name="play-circle-outline"
+                        class="class-list__icon class-list__icon--green"
+                      ></ion-icon>
+                      <p class="class-list__text">Síndrome Coronariana Aguda</p>
+                    </div>
+                    <div class="class-list__time">
+                      <div class="duration">
+                        <span class="duration__time">00:31:00</span>
+                      </div>
+                      <button class="class-list__button">
+                        <ion-icon
+                          name="chevron-forward-outline"
+                          class="class-list__icon"
+                        ></ion-icon>
+                      </button>
+                    </div>
+                  </li>
+                  <li class="class-list__item">
+                    <div class="class-list__name">
+                      <ion-icon
+                        name="play-circle-outline"
+                        class="class-list__icon class-list__icon--green"
+                      ></ion-icon>
+                      <p class="class-list__text">Síndrome Coronariana Aguda</p>
+                    </div>
+                    <div class="class-list__time">
+                      <div class="duration">
+                        <span class="duration__time">00:31:00</span>
+                      </div>
+                      <button class="class-list__button">
+                        <ion-icon
+                          name="chevron-forward-outline"
+                          class="class-list__icon"
+                        ></ion-icon>
+                      </button>
+                    </div>
+                  </li>
+                  <li class="class-list__item">
+                    <div class="class-list__name">
+                      <ion-icon
+                        name="play-circle-outline"
+                        class="class-list__icon class-list__icon--green"
+                      ></ion-icon>
+                      <p class="class-list__text">Síndrome Coronariana Aguda</p>
+                    </div>
+                    <div class="class-list__time">
+                      <div class="duration">
+                        <span class="duration__time">00:31:00</span>
+                      </div>
+                      <button class="class-list__button">
+                        <ion-icon
+                          name="chevron-forward-outline"
+                          class="class-list__icon"
+                        ></ion-icon>
+                      </button>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <!-- ! accordion content -->
+            </div>
+            <!-- ! ACCORDION   -->
+
+            <!-- ACCORDION   -->
+            <div class="accordion">
+              <div class="accordion__header">
+                <div class="active-class">
+                  <div class="active-class__box">
+                    <div class="thumb">
+                      <img
+                        src="./assets/img/foto.png"
+                        alt="Video of a class"
+                        class="thumb__img"
+                      />
+                      <div class="progress" style="--porcentagem-progress: 90">
+                        &nbsp;
+                      </div>
+                      <ion-icon
+                        name="play-circle-outline"
+                        class="thumb__icon"
+                      ></ion-icon>
+                    </div>
+                    <div class="active-class__text-box">
+                      <p class="active-class__text">
+                        Estômago e Esôfago; Intestino; Pâncreas
+                      </p>
+                      <div class="duration">
+                        <ion-icon
+                          name="time-outline"
+                          class="duration__icon"
+                        ></ion-icon>
+                        <span class="duration__time">00:53:13</span>
+                      </div>
+                    </div>
+                  </div>
+                  <button class="active-class__button">
+                    <ion-icon
+                      name="chevron-down-outline"
+                      class="active-class__icon"
+                    ></ion-icon>
+                  </button>
+                </div>
+              </div>
+              <!-- ! accordion header -->
+
+              <!-- accordion content -->
+              <div class="accordion__content">
+                <ul class="class-list">
+                  <li class="class-list__item">
+                    <div class="class-list__name">
+                      <ion-icon
+                        name="play-circle-outline"
+                        class="class-list__icon class-list__icon--green"
+                      ></ion-icon>
+                      <p class="class-list__text">Síndrome Coronariana Aguda</p>
+                    </div>
+                    <div class="class-list__time">
+                      <div class="duration">
+                        <span class="duration__time">00:31:00</span>
+                      </div>
+                      <button class="class-list__button">
+                        <ion-icon
+                          name="chevron-forward-outline"
+                          class="class-list__icon"
+                        ></ion-icon>
+                      </button>
+                    </div>
+                  </li>
+                  <li class="class-list__item">
+                    <div class="class-list__name">
+                      <ion-icon
+                        name="play-circle-outline"
+                        class="class-list__icon class-list__icon--green"
+                      ></ion-icon>
+                      <p class="class-list__text">Síndrome Coronariana Aguda</p>
+                    </div>
+                    <div class="class-list__time">
+                      <div class="duration">
+                        <span class="duration__time">00:31:00</span>
+                      </div>
+                      <button class="class-list__button">
+                        <ion-icon
+                          name="chevron-forward-outline"
+                          class="class-list__icon"
+                        ></ion-icon>
+                      </button>
+                    </div>
+                  </li>
+                  <li class="class-list__item">
+                    <div class="class-list__name">
+                      <ion-icon
+                        name="play-circle-outline"
+                        class="class-list__icon class-list__icon--green"
+                      ></ion-icon>
+                      <p class="class-list__text">Síndrome Coronariana Aguda</p>
+                    </div>
+                    <div class="class-list__time">
+                      <div class="duration">
+                        <span class="duration__time">00:31:00</span>
+                      </div>
+                      <button class="class-list__button">
+                        <ion-icon
+                          name="chevron-forward-outline"
+                          class="class-list__icon"
+                        ></ion-icon>
+                      </button>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <!-- ! accordion content -->
+            </div>
+            <!-- ! ACCORDION   -->
+          </div>
+        </section>
+
+        <main class="main">
+          <div class="main__button-box">
+            <button class="button-medimagem">
+              <span class="button-medimagem__text">2021 Medimagem</span>
+              <ion-icon
+                name="chevron-down-outline"
+                class="button-medimagem__icon"
+              ></ion-icon>
+            </button>
+            <div class="notification">
+              <button class="notification__button">
+                <ion-icon
+                  name="notifications-outline"
+                  class="notification__icon"
+                ></ion-icon>
+              </button>
+              <span class="notification__number">234</span>
+            </div>
+          </div>
+
+          <div class="main__video-box">
+            <video controls class="main__video">
+              <source src="./assets/video/video.mp4" type="video/mp4" />
+              <source src="./assets/video/video.webm" type="video/webm" />
+              Your browser is not suported!
+            </video>
+          </div>
+
+          <div class="main__description">
+            <div class="main__text-box">
+              <p class="main__text">
+                Ventilação Mecânica; Cardiointensivismo; Sepse;
+                Neurointensivismo; Cuidados Paliativos
+              </p>
+            </div>
+            <div class="main__img-box">
+              <img
+                src="./assets/img/footer-img.png"
+                alt="Imagem avalie"
+                class="main__img"
+              />
+              <span class="main__span">Avalie</span>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+
+    <script>
+      const body = document.querySelector("body");
+      const nav = document.querySelector(".nav");
+      const navMobile = document.querySelector(".nav-mobile");
+      const navAccordionButtonsSubsection = document.querySelectorAll(
+        ".subsection__button"
+      );
+      const navAccordionButtonsActiveClass = document.querySelectorAll(
+        ".active-class__button"
+      );
+
+      navAccordionButtonsSubsection.forEach((button) => {
+        button.addEventListener("click", (e) => {
+          const accordion =
+            e.target.parentNode.parentNode.parentNode.parentNode;
+          accordion.classList.toggle("open");
+        });
+      });
+
+      navAccordionButtonsActiveClass.forEach((button) => {
+        button.addEventListener("click", (e) => {
+          const accordion =
+            e.target.parentNode.parentNode.parentNode.parentNode;
+          accordion.classList.toggle("open");
+        });
+      });
+
+      navMobile.addEventListener("click", () => {
+        nav.classList.toggle("open");
+        body.classList.toggle("overflow-hidden");
+      });
+    </script>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

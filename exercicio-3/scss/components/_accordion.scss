@@ -1,0 +1,15 @@
+.accordion {
+  border-radius: 8px;
+  overflow: hidden;
+
+  &__content {
+    display: none;
+  }
+
+  // Accordion open
+  &.open {
+    & .accordion__content {
+      display: block;
+    }
+  }
+}

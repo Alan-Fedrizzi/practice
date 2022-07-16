@@ -1,0 +1,47 @@
+.nav-mobile {
+  cursor: pointer;
+  border: none;
+  padding: 1rem 1rem;
+  background-color: var(--color-primary-dark);
+  color: var(--color-text);
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: none;
+  position: fixed;
+  top: 0.5rem;
+  right: 0.5rem;
+
+  // 600px
+  @media only screen and (max-width: $bp-smallest) {
+    display: block;
+    z-index: 20;
+  }
+
+  &:hover {
+    background-color: var(--color-primary);
+  }
+
+  &__icon {
+    height: 3.6rem;
+    width: 3.6rem;
+  }
+
+  &__icon--close {
+    display: none;
+  }
+}
+
+// Menu mobile open
+.nav.open {
+  .nav-mobile {
+    &__icon--menu {
+      display: none;
+    }
+
+    &__icon--close {
+      display: block;
+    }
+  }
+}

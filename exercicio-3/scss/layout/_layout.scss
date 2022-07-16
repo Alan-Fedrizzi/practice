@@ -1,0 +1,41 @@
+.container {
+  display: flex;
+  gap: 4rem;
+  padding: 4rem 0 0 4rem;
+  height: 100vh;
+  overflow-x: hidden;
+
+  // 1600px
+  @media only screen and (max-width: $bp-huge) {
+    padding: 2rem 0 0 2rem;
+  }
+
+  // 1200px
+  @media only screen and (max-width: $bp-large) {
+    padding: 2rem;
+    gap: 2rem;
+  }
+
+  // 600px
+  @media only screen and (max-width: $bp-smallest) {
+    flex-direction: column;
+    padding: 1rem;
+    gap: 1rem;
+  }
+
+  &__interno {
+    display: flex;
+    gap: 4rem;
+
+    // 1200px
+    @media only screen and (max-width: $bp-large) {
+      flex-direction: column;
+      gap: 2rem;
+    }
+
+    // 600px
+    @media only screen and (max-width: $bp-smallest) {
+      gap: 1rem;
+    }
+  }
+}

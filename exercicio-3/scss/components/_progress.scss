@@ -1,0 +1,9 @@
+.progress {
+  height: 5px;
+  width: 100%;
+  background-image: linear-gradient(
+    to right,
+    var(--color-primary-light) calc(var(--porcentagem-progress) * 1%),
+    var(--color-primary-dark) calc(var(--porcentagem-progress) * 1%) 100%
+  );
+}

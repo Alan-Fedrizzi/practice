@@ -1,0 +1,65 @@
+.active-class {
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 4rem;
+
+  &__box {
+    display: flex;
+    gap: 2rem;
+  }
+
+  &__text-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  &__text {
+    font-size: 1.8rem;
+    line-height: 1.6;
+  }
+
+  &__button {
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    color: var(--color-text);
+    align-self: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &:hover {
+      color: var(--color-primary-light);
+    }
+  }
+
+  &__icon {
+    height: 2.6rem;
+    width: 2.6rem;
+    transition: all 0.5s;
+  }
+}
+
+// Accordion open
+.accordion.open .active-class {
+  background-image: linear-gradient(
+    to right,
+    var(--color-primary-dark),
+    var(--color-background-light)
+  );
+
+  &__icon {
+    transform: rotate(180deg);
+  }
+}
+
+// Blocos externos
+.accordion {
+  .thumb {
+    align-self: start;
+  }
+}

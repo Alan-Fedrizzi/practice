@@ -1,0 +1,24 @@
+.thumb {
+  border-radius: 4px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  max-width: 13rem;
+
+  &__img {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+  }
+
+  &__icon {
+    --ionicon-stroke-width: 40px;
+    height: 3.6rem;
+    width: 3.6rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}

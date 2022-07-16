@@ -1,0 +1,32 @@
+.chart {
+  &__external {
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+    position: relative;
+    background-image: conic-gradient(
+      var(--color-primary) calc(var(--porcentagem-chart) * 1%),
+      var(--color-background-progress) calc(var(--porcentagem-chart) * 1%) 100%
+    );
+  }
+
+  &__internal {
+    width: 7rem;
+    height: 7rem;
+    border-radius: 50%;
+    background-color: var(--color-background);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &__text {
+    font-size: 2rem;
+    color: var(--color-primary);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
