@@ -600,6 +600,7 @@ body.overflow-hidden {
   position: relative;
   padding-bottom: 4rem;
   overflow: auto;
+  padding-right: 1rem;
 }
 @media only screen and (max-width: 87.5em) {
   .nav {
@@ -759,6 +760,7 @@ body.overflow-hidden {
   gap: 4rem;
   padding-bottom: 2rem;
   overflow: auto;
+  padding-right: 1rem;
 }
 @media only screen and (max-width: 75em) {
   .section-course {
