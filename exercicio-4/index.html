@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="css/main.css" />
+
+    <title>MEDSoft</title>
+  </head>
+  <body>
+  
+      <nav class="nav">
+                  
+          <div class="accordion open">
+            <div class="accordion__header">
+              <div class="subsection">
+                <h3 class="heading-tertiary">Mentoria</h3>
+                <button class="subsection__button">
+                  <ion-icon
+                    name="chevron-down-outline"
+                    class="subsection__icon"
+                  ></ion-icon>
+                </button>
+              </div>
+            </div>
+            <div class="accordion__content">
+              <ul class="nav-list">
+                <li class="nav-list__item">
+                  <a href="#" class="nav-list__link">
+                    <ion-icon
+                      name="compass-outline"
+                      class="nav-list__icon"
+                    ></ion-icon>
+                    <span>Orientações</span>
+                  </a>
+                </li>
+                <li class="nav-list__item">
+                  <a href="#" class="nav-list__link">
+                    <ion-icon
+                      name="timer-outline"
+                      class="nav-list__icon"
+                    ></ion-icon>
+                    <span>Desempenho</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+       
+
+      </div>
+ 
+
+    <script>
+          const navAccordionButtonsSubsection = document.querySelectorAll(
+        ".subsection__button"
+      );
+     
+
+      navAccordionButtonsSubsection.forEach((button) => {
+        button.addEventListener("click", (e) => {
+          const accordion =
+            e.target.parentNode.parentNode.parentNode.parentNode;
+          accordion.classList.toggle("open");
+        });
+      });
+
+     
+    </script>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

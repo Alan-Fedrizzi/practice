@@ -1,0 +1,33 @@
+.subsection {
+  font-size: 2.4rem;
+  font-weight: 600;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &__button {
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    color: var(--color-text);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &:hover {
+      color: var(--color-primary-light);
+    }
+  }
+
+  &__icon {
+    height: 2.6rem;
+    width: 2.6rem;
+    transition: all 0.5s;
+  }
+}
+
+// Accordion open
+.accordion.open .subsection__icon {
+  transform: rotate(180deg);
+}

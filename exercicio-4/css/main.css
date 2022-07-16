@@ -1,0 +1,123 @@
+:root {
+  --color-background: #121616;
+  --color-background-light: #293132;
+  --color-background-progress: #404d4f;
+  --color-text: #eceded;
+  --color-primary-dark: #0a515c;
+  --color-primary: #13b191;
+  --color-primary-light: #47ebca;
+  --color-secondary: #ed685e;
+  --color-grey-dark: #363f41;
+  --color-grey: #a5b3b6;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: sans-serif;
+  font-weight: 400;
+  line-height: 1;
+  background-color: var(--color-background);
+  color: var(--color-text);
+}
+body.overflow-hidden {
+  overflow: hidden;
+}
+
+*:focus {
+  outline: none;
+  box-shadow: inset 0 0 0 3px var(--color-primary-light);
+}
+
+.accordion {
+  border-radius: 8px;
+  overflow: hidden;
+}
+.accordion__content {
+  /* 1) Hide it visually */
+  opacity: 0;
+  /* 43) For animation */
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: all 0.5s ease-in-out;
+}
+.accordion.open .accordion__content {
+  opacity: 1;
+  transform: scaleY(1);
+}
+
+.nav-list {
+  list-style: none;
+}
+.nav-list__item {
+  border-radius: 8px;
+}
+.nav-list__item:not(:last-child) {
+  margin-bottom: 1rem;
+}
+.nav-list__link:link, .nav-list__link:visited {
+  font-size: 1.8rem;
+  color: var(--color-grey);
+  text-decoration: none;
+  border-radius: 8px;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.nav-list__link:hover, .nav-list__link:active, .nav-list__link--active:link, .nav-list__link--active:visited {
+  color: var(--color-text);
+  background-color: var(--color-primary-dark);
+}
+.nav-list__icon {
+  --ionicon-stroke-width: 40px;
+  height: 3.6rem;
+  width: 3.6rem;
+}
+
+.subsection {
+  font-size: 2.4rem;
+  font-weight: 600;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.subsection__button {
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  color: var(--color-text);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.subsection__button:hover {
+  color: var(--color-primary-light);
+}
+.subsection__icon {
+  height: 2.6rem;
+  width: 2.6rem;
+  transition: all 0.5s;
+}
+
+.accordion.open .subsection__icon {
+  transform: rotate(180deg);
+}
+
+.nav {
+  margin: 6rem auto;
+  width: 30rem;
+  background-color: var(--color-background-light);
+}/*# sourceMappingURL=main.css.map */
