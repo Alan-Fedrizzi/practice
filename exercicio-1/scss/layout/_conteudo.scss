@@ -1,0 +1,31 @@
+.conteudo {
+  max-width: $med-grid-breakpoints-xl;
+  margin: 1rem auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(26rem, 1fr));
+  gap: 1rem;
+  display: none;
+}
+
+body.aulas .conteudo--aulas {
+  display: grid;
+}
+
+body.material .conteudo--material {
+  display: grid;
+  --color-primary: var(--color-orange);
+  --color-primary-dark: var(--color-orange-dark);
+}
+
+body.questoes .conteudo--questoes {
+  display: grid;
+  --color-primary: var(--color-blue);
+  --color-primary-dark: var(--color-blue-dark);
+}
+
+body.revalida .conteudo--revalida {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  --color-primary: var(--color-pink);
+}

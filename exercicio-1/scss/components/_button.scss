@@ -1,0 +1,24 @@
+.button {
+  --ionicon-stroke-width: 50px;
+  cursor: pointer;
+  background-color: var(--color-background);
+  height: 2.4rem;
+  width: 2.4rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s;
+  border: 2px solid var(--color-primary);
+
+  &__icon {
+    height: 1.8rem;
+    width: 1.8rem;
+    color: var(--color-primary);
+  }
+}
+
+// Week Current
+.week--current .button {
+  background-color: var(--color-primary-dark);
+}

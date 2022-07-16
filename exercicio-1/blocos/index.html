@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="css/main.css" />
+
+    <title>Medgrupo Prova 2</title>
+  </head>
+  <body>
+    <div class="container--blocos">
+      <!-- BUTTON -->
+      <button class="button">
+        <ion-icon name="add-outline" class="button__icon"></ion-icon>
+      </button>
+      <!-- ! BUTTON -->
+
+      <!-- CHART -->
+      <div class="chart" style="--porcentagem-chart: 25">
+        <div class="chart__side chart__side--front">
+          <div class="chart__external">
+            <div class="chart__internal">
+              <span class="chart__text">CIR</span>
+              <span class="chart__text">1</span>
+            </div>
+          </div>
+        </div>
+        <div class="chart__side chart__side--back">
+          <div class="chart__external">
+            <div class="chart__internal">
+              <span class="chart__text">CIR</span>
+              <span class="chart__text">1</span>
+            </div>
+            <button class="button chart__button">
+              <ion-icon
+                name="arrow-down-outline"
+                class="button__icon chart__icon"
+              ></ion-icon>
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- ! CHART -->
+
+      <!-- WEEK -->
+      <div class="week">
+        <div class="week__text-container">
+          <div class="week__number-container">
+            <span class="week__text">Semana</span>
+            <span class="week__number">01</span>
+          </div>
+          <div class="week__date-container">
+            <span class="week__date">16/08</span>
+            <span class="week__date">24/08</span>
+          </div>
+          <button class="button week__button">
+            <ion-icon
+              name="add-outline"
+              class="button__icon week__icon week__icon--add"
+            ></ion-icon>
+            <ion-icon
+              name="remove-outline"
+              class="button__icon week__icon week__icon--remove"
+            ></ion-icon>
+          </button>
+        </div>
+
+        <div class="chart" style="--porcentagem-chart: 25">
+          <div class="chart__side chart__side--front">
+            <div class="chart__external">
+              <div class="chart__internal">
+                <span class="chart__text">CIR</span>
+                <span class="chart__text">1</span>
+              </div>
+            </div>
+          </div>
+          <div class="chart__side chart__side--back">
+            <div class="chart__external">
+              <div class="chart__internal">
+                <span class="chart__text">CIR</span>
+                <span class="chart__text">1</span>
+              </div>
+              <button class="button chart__button">
+                <ion-icon
+                  name="arrow-down-outline"
+                  class="button__icon chart__icon"
+                ></ion-icon>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="chart" style="--porcentagem-chart: 25">
+          <div class="chart__side chart__side--front">
+            <div class="chart__external">
+              <div class="chart__internal">
+                <span class="chart__text">CIR</span>
+                <span class="chart__text">1</span>
+              </div>
+            </div>
+          </div>
+          <div class="chart__side chart__side--back">
+            <div class="chart__external">
+              <div class="chart__internal">
+                <span class="chart__text">CIR</span>
+                <span class="chart__text">1</span>
+              </div>
+              <button class="button chart__button">
+                <ion-icon
+                  name="arrow-down-outline"
+                  class="button__icon chart__icon"
+                ></ion-icon>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- ! WEEK -->
+    </div>
+
+    <script>
+      const weekButtons = document.querySelectorAll(".week__button");
+      const chartButtons = document.querySelectorAll(".chart__button");
+
+      weekButtons.forEach((button) => {
+        button.addEventListener("click", (e) => {
+          console.log(e);
+          const week = e.target.parentNode.parentNode.parentNode;
+          console.log(week);
+          week.classList.toggle("active");
+        });
+      });
+
+      chartButtons.forEach((button) => {
+        button.addEventListener("click", (e) => {
+          console.log(e);
+          const chartSideBack = e.target.parentNode.parentNode.parentNode;
+          console.log(chartSideBack);
+          chartSideBack.classList.add("download");
+        });
+      });
+    </script>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

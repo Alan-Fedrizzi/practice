@@ -1,0 +1,85 @@
+.week {
+  padding: 1rem;
+  border-radius: 20px 100px 100px 20px;
+  background-color: var(--color-background);
+  display: flex;
+  gap: 1rem;
+
+  @media only screen and (max-width: $med-grid-breakpoints-sm) {
+    flex-wrap: wrap;
+    border-radius: 20px 40px 40px 20px;
+  }
+
+  &__text-container {
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-right: auto;
+    position: relative;
+  }
+
+  &__number-container {
+    transition: all 0.3s;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__text {
+    font-size: 1.2rem;
+    margin-bottom: 0.4rem;
+  }
+
+  &__number {
+    font-size: 2.4rem;
+  }
+
+  &__date-container {
+    position: absolute;
+    opacity: 0;
+    transition: all 0.3s;
+  }
+
+  &__date {
+    font-size: 1.8rem;
+  }
+
+  &__icon--remove {
+    display: none;
+  }
+}
+
+// Week Active
+.aulas,
+.material,
+.questoes {
+  .week.active {
+    .week__number-container {
+      opacity: 0;
+    }
+
+    .week__date-container {
+      opacity: 1;
+    }
+  }
+}
+
+.week.active {
+  .week__icon--add {
+    display: none;
+  }
+
+  .week__icon--remove {
+    display: block;
+  }
+}
+
+// Week two columns
+.week--two-columns {
+  grid-column: 1 / -1;
+}
+
+// Week Current
+.week--current {
+  background-color: var(--color-primary-dark);
+}
