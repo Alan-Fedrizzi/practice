@@ -12,6 +12,7 @@
   &__link:link,
   &__link:visited {
     font-size: 1.8rem;
+    line-height: 1.2;
     color: var(--color-grey);
     text-decoration: none;
     border-radius: 8px;
@@ -32,6 +33,6 @@
   &__icon {
     --ionicon-stroke-width: 40px;
     height: 3.6rem;
-    width: 3.6rem;
+    flex: 0 0 3.6rem;
   }
 }

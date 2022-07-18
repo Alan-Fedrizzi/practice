@@ -1,5 +1,8 @@
 .nav {
   margin: 6rem auto;
-  width: 30rem;
-  background-color: var(--color-background-light);
+  max-width: 40rem;
+
+  .accordion {
+    background-color: var(--color-background-light);
+  }
 }

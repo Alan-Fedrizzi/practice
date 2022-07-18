@@ -45,16 +45,8 @@ body.overflow-hidden {
   overflow: hidden;
 }
 .accordion__content {
-  /* 1) Hide it visually */
-  opacity: 0;
-  /* 43) For animation */
-  transform: scaleY(0);
-  transform-origin: top;
+  max-height: 0;
   transition: all 0.5s ease-in-out;
-}
-.accordion.open .accordion__content {
-  opacity: 1;
-  transform: scaleY(1);
 }
 
 .nav-list {
@@ -68,6 +60,7 @@ body.overflow-hidden {
 }
 .nav-list__link:link, .nav-list__link:visited {
   font-size: 1.8rem;
+  line-height: 1.2;
   color: var(--color-grey);
   text-decoration: none;
   border-radius: 8px;
@@ -83,7 +76,7 @@ body.overflow-hidden {
 .nav-list__icon {
   --ionicon-stroke-width: 40px;
   height: 3.6rem;
-  width: 3.6rem;
+  flex: 0 0 3.6rem;
 }
 
 .subsection {
@@ -118,6 +111,8 @@ body.overflow-hidden {
 
 .nav {
   margin: 6rem auto;
-  width: 30rem;
+  max-width: 40rem;
+}
+.nav .accordion {
   background-color: var(--color-background-light);
 }/*# sourceMappingURL=main.css.map */
