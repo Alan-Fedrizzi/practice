@@ -303,7 +303,14 @@
       </main>
 
       <aside class="sidebar">
+        <button class="sidebar__button sidebar__button--calendario">
+          Calendário
+        </button>
         <div class="calendar">
+          <button class="sidebar__button sidebar__button--close">
+            <ion-icon name="close-outline" class="sidebar__icon"></ion-icon>
+          </button>
+
           <div class="month">
             <div class="month__text-container">
               <button class="button-arrow">
@@ -372,35 +379,36 @@
             <span class="calendar__text calendar__text--other-month">1</span>
             <span class="calendar__text calendar__text--other-month">2</span>
           </div>
-        </div>
-        <div class="accordion open">
-          <div class="accordion__header">
-            <div class="subsection">
-              <h4 class="heading-quaternary">Filtrar</h4>
-              <button class="button-arrow subsection__button">
-                <ion-icon
-                  name="chevron-down-outline"
-                  class="button-arrow__icon subsection__icon"
-                ></ion-icon>
-              </button>
-            </div>
-          </div>
-          <div class="accordion__content">
-            <div class="filter">
-              <input
-                type="checkbox"
-                class="filter__checkbox"
-                id="filter-toggle"
-              />
-              <label for="filter-toggle" class="filter__label">
-                <div class="filter__check">
+
+          <div class="accordion open">
+            <div class="accordion__header">
+              <div class="subsection">
+                <h4 class="heading-quaternary">Filtrar</h4>
+                <button class="button-arrow subsection__button">
                   <ion-icon
-                    name="checkmark-outline"
-                    class="filter__icon"
+                    name="chevron-down-outline"
+                    class="button-arrow__icon subsection__icon"
                   ></ion-icon>
-                </div>
-                <p class="filter__text">Somente pendentes</p>
-              </label>
+                </button>
+              </div>
+            </div>
+            <div class="accordion__content">
+              <div class="filter">
+                <input
+                  type="checkbox"
+                  class="filter__checkbox"
+                  id="filter-toggle"
+                />
+                <label for="filter-toggle" class="filter__label">
+                  <div class="filter__check">
+                    <ion-icon
+                      name="checkmark-outline"
+                      class="filter__icon"
+                    ></ion-icon>
+                  </div>
+                  <p class="filter__text">Somente pendentes</p>
+                </label>
+              </div>
             </div>
           </div>
         </div>
@@ -410,6 +418,13 @@
     <script>
       const container = document.querySelector(".container");
       const navButton = document.querySelector(".nav__button");
+      const calendar = document.querySelector(".calendar");
+      const sidebarButtonCalendario = document.querySelector(
+        ".sidebar__button--calendario"
+      );
+      const sidebarButtonClose = document.querySelector(
+        ".sidebar__button--close"
+      );
       const subsectionButtons = document.querySelectorAll(
         ".subsection__button"
       );
@@ -421,8 +436,42 @@
         });
       });
 
+      sidebarButtonCalendario.addEventListener("click", () => {
+        calendar.classList.add("open");
+      });
+
+      sidebarButtonClose.addEventListener("click", () => {
+        calendar.classList.remove("open");
+      });
+
+      function calendarClose() {
+        if (window.innerWidth > 800 && calendar.classList.contains("open")) {
+          calendar.classList.remove("open");
+        }
+      }
+
       navButton.addEventListener("click", () => {
         container.classList.toggle("container--nav-narrow");
+        if (window.innerWidth <= 600) {
+          container.classList.toggle("container--nav-mobile");
+        }
+      });
+
+      function navNarrow() {
+        if (
+          window.innerWidth <= 600 &&
+          !container.classList.contains("container--nav-mobile")
+        ) {
+          container.classList.add("container--nav-narrow");
+        } else if (window.innerWidth > 600) {
+          container.classList.remove("container--nav-mobile");
+        }
+      }
+
+      navNarrow();
+      window.addEventListener("resize", () => {
+        calendarClose();
+        navNarrow();
       });
     </script>
 

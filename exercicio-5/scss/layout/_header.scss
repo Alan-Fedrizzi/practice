@@ -5,8 +5,25 @@
   align-items: center;
   justify-content: space-between;
 
+  // 600px
+  @media only screen and (max-width: $bp-smallest) {
+    flex-direction: column;
+  }
+
+  .heading-primary {
+    // 600px
+    @media only screen and (max-width: $bp-smallest) {
+      align-self: start;
+    }
+  }
+
   &__button-container {
     display: flex;
     align-items: center;
+
+    // 600px
+    @media only screen and (max-width: $bp-smallest) {
+      align-self: end;
+    }
   }
 }

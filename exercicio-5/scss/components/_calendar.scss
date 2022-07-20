@@ -9,6 +9,16 @@
     justify-items: center;
     gap: 1.6rem;
     margin-bottom: 1rem;
+
+    // 1000px
+    @media only screen and (max-width: $bp-medium) {
+      gap: 0.8rem;
+    }
+
+    // 800px
+    @media only screen and (max-width: $bp-small) {
+      gap: 1.6rem;
+    }
   }
 
   &__text {
@@ -20,6 +30,18 @@
     align-items: center;
     justify-content: center;
     border-radius: 100px;
+
+    // 1000px
+    @media only screen and (max-width: $bp-medium) {
+      width: 2.6rem;
+      height: 2.6rem;
+    }
+
+    // 800px
+    @media only screen and (max-width: $bp-small) {
+      width: 3.2rem;
+      height: 3.2rem;
+    }
   }
 
   &__text--week-days {
