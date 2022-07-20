@@ -1,32 +1,15 @@
 .main {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
 
   // 1200px
   @media only screen and (max-width: $bp-large) {
     order: -1;
   }
 
-  &__button-box {
-    justify-content: end;
-    display: flex;
-    align-items: center;
-    padding-right: 4rem;
-    padding-top: 1rem;
-
-    // 1600px
-    @media only screen and (max-width: $bp-huge) {
-      padding-right: 2rem;
-    }
-
-    // 600px
-    @media only screen and (max-width: $bp-smallest) {
-      padding: 0;
-    }
-  }
-
   &__video-box {
+    margin: auto 0;
     padding: 0 4rem;
 
     // 1600px

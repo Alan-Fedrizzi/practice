@@ -5,6 +5,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 0.6rem;
     padding: 1rem 2rem;
 
     &:not(:last-child) {
@@ -15,7 +16,7 @@
   &__name {
     display: flex;
     align-items: center;
-    gap: 1rem;
+    gap: 0.6rem;
   }
 
   &__icon {
@@ -38,7 +39,7 @@
   &__time {
     display: flex;
     align-items: center;
-    gap: 1rem;
+    gap: 0.6rem;
   }
 
   &__button {
@@ -46,7 +47,6 @@
     border: none;
     background-color: transparent;
     color: var(--color-text);
-    align-self: center;
     display: flex;
     justify-content: center;
     align-items: center;

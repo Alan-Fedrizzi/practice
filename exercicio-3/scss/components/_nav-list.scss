@@ -2,8 +2,6 @@
   list-style: none;
 
   &__item {
-    border-radius: 8px;
-
     &:not(:last-child) {
       margin-bottom: 1rem;
     }

@@ -3,7 +3,7 @@
   gap: 4rem;
   padding: 4rem 0 0 4rem;
   height: 100vh;
-  overflow-x: hidden;
+  overflow: hidden;
 
   // 1600px
   @media only screen and (max-width: $bp-huge) {
@@ -14,6 +14,7 @@
   @media only screen and (max-width: $bp-large) {
     padding: 2rem;
     gap: 2rem;
+    overflow: auto;
   }
 
   // 600px
@@ -23,9 +24,31 @@
     gap: 1rem;
   }
 
+  &__meio {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+
+    // 1200px
+    @media only screen and (max-width: $bp-large) {
+      gap: 2rem;
+    }
+
+    // 800px
+    @media only screen and (max-width: $bp-small) {
+      gap: 1rem;
+    }
+  }
+
   &__interno {
     display: flex;
     gap: 4rem;
+    height: calc(100vh - 14rem);
+
+    // 1600px
+    @media only screen and (max-width: $bp-huge) {
+      height: calc(100vh - 12rem);
+    }
 
     // 1200px
     @media only screen and (max-width: $bp-large) {

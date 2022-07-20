@@ -1,54 +1,18 @@
 .section-course {
   flex: 1 0 42rem;
-  display: flex;
-  flex-direction: column;
-  gap: 4rem;
   padding-bottom: 2rem;
-  overflow: auto;
   padding-right: 1rem;
+  overflow: auto;
 
   // 1200px
   @media only screen and (max-width: $bp-large) {
     overflow: visible;
+    padding-right: 0;
   }
 
   // 600px
   @media only screen and (max-width: $bp-smallest) {
-    gap: 2rem;
     margin: 1rem;
-  }
-
-  &__text-box {
-    display: flex;
-    align-items: center;
-    justify-self: center;
-    gap: 1rem;
-    padding: 2rem 0 1rem 0;
-  }
-
-  &__button {
-    cursor: pointer;
-    border: none;
-    background-color: transparent;
-    color: var(--color-text);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    &:hover {
-      color: var(--color-primary-light);
-    }
-  }
-
-  &__icon {
-    height: 2.6rem;
-    width: 2.6rem;
-  }
-
-  &__interno {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
   }
 
   .course {
