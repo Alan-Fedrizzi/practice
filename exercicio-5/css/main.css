@@ -1,0 +1,444 @@
+:root {
+  --color-background: #121616;
+  --color-background-light: #293132;
+  --color-brand-2: #0f7888;
+  --color-brand-3: #14a2b8;
+  --color-brand-4: #47d5eb;
+  --color-grey-dark: #6e8386;
+  --color-grey: #a5b3b6;
+  --color-grey-light: #c1cbcd;
+  --color-orange: #ed685e;
+  --color-text: #f9fafa;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: sans-serif;
+  font-weight: 400;
+  line-height: 1;
+  background-color: var(--color-background);
+  color: var(--color-text);
+}
+
+*:focus {
+  outline: none;
+  box-shadow: inset 0 0 0 3px var(--color-brand-3);
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+  height: 0px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-background);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--color-background-light);
+  border-radius: 20px;
+}
+
+.heading-primary {
+  font-size: 2.4rem;
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+.heading-secondary {
+  font-size: 2.4rem;
+  font-weight: 600;
+}
+
+.heading-tertiary {
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.heading-quaternary {
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.accordion__content {
+  display: none;
+}
+.accordion.open .accordion__content {
+  display: block;
+}
+
+.button-arrow {
+  cursor: pointer;
+  height: 2.4rem;
+  width: 2.4rem;
+  background-color: transparent;
+  color: var(--color-text);
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.button-arrow:hover {
+  color: var(--color-brand-3);
+}
+.button-arrow__icon {
+  height: 2.4rem;
+  width: 2.4rem;
+  transition: all 0.5s;
+}
+
+.accordion.open .button-arrow__icon {
+  transform: rotate(180deg);
+}
+
+.button-medimagem {
+  cursor: pointer;
+  border: none;
+  padding: 0.4rem 1.2rem;
+  background-color: transparent;
+  color: var(--color-text);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 8px;
+}
+.button-medimagem:hover {
+  background-color: var(--color-background-light);
+}
+.button-medimagem__text {
+  font-size: 1.4rem;
+  line-height: 1.15;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.button-medimagem__icon {
+  height: 2.4rem;
+  width: 2.4rem;
+  margin-left: 0.8rem;
+}
+
+.calendar {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+.calendar__content {
+  display: grid;
+  grid-template-columns: repeat(7, auto);
+  justify-items: center;
+  gap: 1.6rem;
+  margin-bottom: 1rem;
+}
+.calendar__text {
+  font-size: 1.2rem;
+  font-weight: 600;
+  width: 3.2rem;
+  height: 3.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100px;
+}
+.calendar__text--week-days {
+  font-weight: 400;
+  color: var(--color-grey-light);
+  height: 2.4rem;
+  margin-bottom: -0.4rem;
+}
+.calendar__text--other-month {
+  font-weight: 400;
+  color: var(--color-grey-dark);
+}
+.calendar__text--current {
+  background-color: var(--color-brand-3);
+}
+
+.filter__checkbox {
+  display: none;
+}
+.filter__label {
+  display: flex;
+  align-items: center;
+  gap: 1.8rem;
+  padding: 1rem 0.2rem;
+  cursor: pointer;
+}
+.filter__check {
+  height: 2.4rem;
+  width: 2.4rem;
+  border: 2px solid var(--color-brand-4);
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.filter__icon {
+  color: var(--color-text);
+  height: 2.2rem;
+  width: 2.2rem;
+  display: none;
+}
+.filter__text {
+  font-size: 1.4rem;
+  line-height: 1.15;
+}
+
+.filter__checkbox:checked ~ .filter__label .filter__icon {
+  display: block;
+}
+
+.month {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.month__text-container {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+.month__text {
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+.month__icon {
+  height: 2.4rem;
+  width: 2.4rem;
+}
+
+.nav-list {
+  list-style: none;
+}
+.nav-list__item:not(:last-child) {
+  margin-bottom: 0.8rem;
+}
+.nav-list__link:link, .nav-list__link:visited {
+  font-size: 1.4rem;
+  line-height: 1.15;
+  color: var(--color-grey);
+  text-decoration: none;
+  border-radius: 8px;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+.nav-list__link:hover, .nav-list__link:active, .nav-list__link--active:link, .nav-list__link--active:visited {
+  color: var(--color-text);
+  background-color: var(--color-brand-2);
+}
+.nav-list__icon {
+  height: 2.4rem;
+  width: 2.4rem;
+}
+
+.container.container--nav-narrow .nav-list__icon {
+  height: 2rem;
+  width: 2rem;
+}
+.container.container--nav-narrow .nav-list__span {
+  display: none;
+}
+
+.new-task {
+  padding: 1.6rem;
+  display: flex;
+  align-items: center;
+  background-color: var(--color-background-light);
+  border-radius: 8px;
+}
+.new-task__icon {
+  height: 2.4rem;
+  width: 2.4rem;
+  margin-right: 1.6rem;
+}
+.new-task__text {
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+.notification {
+  position: relative;
+}
+.notification__button {
+  cursor: pointer;
+  border: none;
+  padding: 0.4rem 0 0.4rem 2.4rem;
+  background-color: transparent;
+  color: var(--color-text);
+  border-radius: 8px;
+}
+.notification__button:hover {
+  background-color: var(--color-background-light);
+}
+.notification__icon {
+  height: 2.4rem;
+  width: 2.4rem;
+}
+.notification__number {
+  font-size: 1.2rem;
+  line-height: 1.3;
+  font-weight: 600;
+  padding: 0 0.5rem;
+  border-radius: 100px;
+  background-color: var(--color-orange);
+  position: absolute;
+  top: 0.3rem;
+  left: 0.8rem;
+  z-index: 1;
+}
+
+.subsection {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 24rem 1fr 40rem;
+  grid-template-rows: auto 1fr;
+  height: 100vh;
+  overflow: hidden;
+}
+@media only screen and (max-width: 75em) {
+  .container {
+    grid-template-columns: 24rem 1fr 36rem;
+  }
+}
+
+.container.container--nav-narrow {
+  grid-template-columns: 8rem 1fr 40rem;
+}
+@media only screen and (max-width: 75em) {
+  .container.container--nav-narrow {
+    grid-template-columns: 8rem 1fr 36rem;
+  }
+}
+
+.container-components {
+  margin: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.content {
+  padding: 1.6rem 2.4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+  overflow: auto;
+}
+.content__day {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.header {
+  grid-column: 2/-1;
+  padding: 2.8rem 2.4rem 1.2rem 2.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header__button-container {
+  display: flex;
+  align-items: center;
+}
+
+.nav {
+  grid-row: 1/-1;
+  margin: 2.4rem;
+  margin-right: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+.nav__menu {
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.nav__logo-container {
+  display: flex;
+  align-items: center;
+}
+.nav__logo {
+  width: 4rem;
+  height: 4rem;
+  margin-right: 1.2rem;
+}
+.nav__button {
+  position: fixed;
+  bottom: 2.4rem;
+  left: 19.2rem;
+  z-index: 20;
+}
+.nav__icon--margin-right {
+  margin-right: -1rem;
+}
+.nav::after {
+  content: "";
+  height: 12rem;
+  background-image: linear-gradient(rgba(18, 22, 22, 0), var(--color-background));
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 10;
+  width: 24rem;
+}
+
+.container.container--nav-narrow .nav {
+  margin: 2.4rem 2rem;
+  margin-right: 1.6rem;
+}
+.container.container--nav-narrow .nav .heading-secondary {
+  display: none;
+}
+.container.container--nav-narrow .nav__menu {
+  gap: 0.8rem;
+}
+.container.container--nav-narrow .nav .accordion__header {
+  display: none;
+}
+.container.container--nav-narrow .nav__button {
+  bottom: 2.4rem;
+  left: 2.8rem;
+  transform: rotate(180deg);
+}
+.container.container--nav-narrow .nav::after {
+  width: 8rem;
+}
+
+.nav .subsection {
+  margin-bottom: 1.6rem;
+}
+
+.sidebar {
+  padding: 1.6rem 2.4rem;
+}
+
+.sidebar .calendar {
+  margin-bottom: 2.4rem;
+}
+
+.sidebar .subsection {
+  margin-bottom: 0.8rem;
+}/*# sourceMappingURL=main.css.map */

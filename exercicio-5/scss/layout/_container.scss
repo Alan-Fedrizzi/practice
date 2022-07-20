@@ -1,0 +1,29 @@
+.container {
+  display: grid;
+  grid-template-columns: 24rem 1fr 40rem;
+  grid-template-rows: auto 1fr;
+  height: 100vh;
+  overflow: hidden;
+
+  // 1200px
+  @media only screen and (max-width: $bp-large) {
+    grid-template-columns: 24rem 1fr 36rem;
+  }
+}
+
+// nav narrow
+.container.container--nav-narrow {
+  grid-template-columns: 8rem 1fr 40rem;
+
+  // 1200px
+  @media only screen and (max-width: $bp-large) {
+    grid-template-columns: 8rem 1fr 36rem;
+  }
+}
+
+.container-components {
+  margin: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}

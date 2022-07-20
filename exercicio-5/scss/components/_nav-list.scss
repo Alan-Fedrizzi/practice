@@ -1,0 +1,47 @@
+.nav-list {
+  list-style: none;
+
+  &__item {
+    &:not(:last-child) {
+      margin-bottom: .8rem;
+    }
+  }
+
+  &__link:link,
+  &__link:visited {
+    font-size: 1.4rem;
+    line-height: 1.15;
+    color: var(--color-grey);
+    text-decoration: none;
+    border-radius: 8px;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+  }
+
+  &__link:hover,
+  &__link:active,
+  &__link--active:link,
+  &__link--active:visited {
+    color: var(--color-text);
+    background-color: var(--color-brand-2);
+  }
+
+  &__icon {
+    height: 2.4rem;
+    width: 2.4rem;
+  }
+}
+
+// nav narrow
+.container.container--nav-narrow {
+  .nav-list__icon {
+    height: 2rem;
+    width: 2rem;
+  }
+
+  .nav-list__span {
+    display: none;
+  }
+}

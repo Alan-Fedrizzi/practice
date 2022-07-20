@@ -1,0 +1,12 @@
+.accordion {
+  &__content {
+    display: none;
+  }
+
+  // Accordion open
+  &.open {
+    .accordion__content {
+      display: block;
+    }
+  }
+}

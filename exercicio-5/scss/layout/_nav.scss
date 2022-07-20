@@ -1,0 +1,86 @@
+.nav {
+  grid-row: 1 / -1;
+  margin: 2.4rem;
+  margin-right: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+
+  &__menu {
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  &__logo-container {
+    display: flex;
+    align-items: center;
+  }
+
+  &__logo {
+    width: 4rem;
+    height: 4rem;
+    margin-right: 1.2rem;
+  }
+
+  &__button {
+    position: fixed;
+    bottom: 2.4rem;
+    left: 19.2rem;
+    z-index: 20;
+  }
+
+  &__icon--margin-right {
+    margin-right: -1rem;
+  }
+
+  &::after {
+    content: "";
+    height: 12rem;
+    background-image: linear-gradient(
+      rgba(18, 22, 22, 0),
+      var(--color-background)
+    );
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 10;
+    width: 24rem;
+  }
+}
+
+// nav narrow
+.container.container--nav-narrow {
+  .nav {
+    margin: 2.4rem 2rem;
+    margin-right: 1.6rem;
+
+    .heading-secondary {
+      display: none;
+    }
+
+    &__menu {
+      gap: 0.8rem;
+    }
+
+    .accordion__header {
+      display: none;
+    }
+
+    &__button {
+      bottom: 2.4rem;
+      left: 2.8rem;
+      transform: rotate(180deg);
+    }
+
+    &::after {
+      width: 8rem;
+    }
+  }
+}
+
+// Blocos externos
+.nav .subsection {
+  margin-bottom: 1.6rem;
+}

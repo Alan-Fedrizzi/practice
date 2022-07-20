@@ -1,0 +1,28 @@
+.button-medimagem {
+  cursor: pointer;
+  border: none;
+  padding: 0.4rem 1.2rem;
+  background-color: transparent;
+  color: var(--color-text);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 8px;
+
+  &:hover {
+    background-color: var(--color-background-light);
+  }
+
+  &__text {
+    font-size: 1.4rem;
+    line-height: 1.15;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+
+  &__icon {
+    height: 2.4rem;
+    width: 2.4rem;
+    margin-left: 0.8rem;
+  }
+}

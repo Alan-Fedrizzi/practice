@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="css/main.css" />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container-components">
+      <div class="new-task">
+        <ion-icon name="add-circle-outline" class="new-task__icon"></ion-icon>
+        <p class="new-task__text">Adicionar Tarefa</p>
+      </div>
+
+      <div class="month">
+        <div class="month__text-container">
+          <button class="button-arrow">
+            <ion-icon
+              name="chevron-back-outline"
+              class="button-arrow__icon"
+            ></ion-icon>
+          </button>
+          <p class="month__text">Dezembro 2021</p>
+          <button class="button-arrow">
+            <ion-icon
+              name="chevron-forward-outline"
+              class="button-arrow__icon"
+            ></ion-icon>
+          </button>
+        </div>
+        <ion-icon name="bar-chart-outline" class="month__icon"></ion-icon>
+      </div>
+
+      <div class="calendar">
+        <div class="month">
+          <div class="month__text-container">
+            <button class="button-arrow">
+              <ion-icon
+                name="chevron-back-outline"
+                class="button-arrow__icon"
+              ></ion-icon>
+            </button>
+            <p class="month__text">Dezembro 2021</p>
+            <button class="button-arrow">
+              <ion-icon
+                name="chevron-forward-outline"
+                class="button-arrow__icon"
+              ></ion-icon>
+            </button>
+          </div>
+          <ion-icon name="bar-chart-outline" class="month__icon"></ion-icon>
+        </div>
+
+        <div class="calendar__content">
+          <span class="calendar__text calendar__text--week-days">Seg</span>
+          <span class="calendar__text calendar__text--week-days">Ter</span>
+          <span class="calendar__text calendar__text--week-days">Qua</span>
+          <span class="calendar__text calendar__text--week-days">Qui</span>
+          <span class="calendar__text calendar__text--week-days">Sex</span>
+          <span class="calendar__text calendar__text--week-days">Sab</span>
+          <span class="calendar__text calendar__text--week-days">Dom</span>
+
+          <span class="calendar__text calendar__text--other-month">29</span>
+          <span class="calendar__text calendar__text--other-month">30</span>
+          <span class="calendar__text">1</span>
+          <span class="calendar__text">2</span>
+          <span class="calendar__text">3</span>
+          <span class="calendar__text">4</span>
+          <span class="calendar__text">5</span>
+
+          <span class="calendar__text">6</span>
+          <span class="calendar__text">7</span>
+          <span class="calendar__text">8</span>
+          <span class="calendar__text">9</span>
+          <span class="calendar__text">10</span>
+          <span class="calendar__text">11</span>
+          <span class="calendar__text">12</span>
+
+          <span class="calendar__text calendar__text--current">13</span>
+          <span class="calendar__text">14</span>
+          <span class="calendar__text">15</span>
+          <span class="calendar__text">16</span>
+          <span class="calendar__text">17</span>
+          <span class="calendar__text">18</span>
+          <span class="calendar__text">19</span>
+
+          <span class="calendar__text">20</span>
+          <span class="calendar__text">21</span>
+          <span class="calendar__text">22</span>
+          <span class="calendar__text">23</span>
+          <span class="calendar__text">24</span>
+          <span class="calendar__text">25</span>
+          <span class="calendar__text">26</span>
+
+          <span class="calendar__text">27</span>
+          <span class="calendar__text">28</span>
+          <span class="calendar__text">29</span>
+          <span class="calendar__text">30</span>
+          <span class="calendar__text">31</span>
+          <span class="calendar__text calendar__text--other-month">1</span>
+          <span class="calendar__text calendar__text--other-month">2</span>
+        </div>
+      </div>
+
+      <div class="accordion open">
+        <div class="accordion__header">
+          <div class="subsection">
+            <h4 class="heading-quaternary">Filtrar</h4>
+            <button class="button-arrow subsection__button">
+              <ion-icon
+                name="chevron-down-outline"
+                class="button-arrow__icon subsection__icon"
+              ></ion-icon>
+            </button>
+          </div>
+        </div>
+        <div class="accordion__content">
+          <div class="filter">
+            <input
+              type="checkbox"
+              class="filter__checkbox"
+              id="filter-toggle"
+            />
+            <label for="filter-toggle" class="filter__label">
+              <div class="filter__check">
+                <ion-icon
+                  name="checkmark-outline"
+                  class="filter__icon"
+                ></ion-icon>
+              </div>
+              <p class="filter__text">Somente pendentes</p>
+            </label>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

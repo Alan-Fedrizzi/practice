@@ -1,0 +1,13 @@
+.content {
+  padding: 1.6rem 2.4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+  overflow: auto;
+
+  &__day {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+  }
+}

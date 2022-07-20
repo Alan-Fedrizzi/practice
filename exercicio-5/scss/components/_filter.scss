@@ -1,0 +1,42 @@
+.filter {
+  &__checkbox {
+    display: none;
+  }
+
+  &__label {
+    display: flex;
+    align-items: center;
+    gap: 1.8rem;
+    padding: 1rem 0.2rem;
+    cursor: pointer;
+  }
+
+  &__check {
+    height: 2.4rem;
+    width: 2.4rem;
+    border: 2px solid var(--color-brand-4);
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__icon {
+    color: var(--color-text);
+    height: 2.2rem;
+    width: 2.2rem;
+    display: none;
+  }
+
+  &__text {
+    font-size: 1.4rem;
+    line-height: 1.15;
+  }
+}
+
+// Check
+.filter__checkbox:checked ~ .filter__label {
+  .filter__icon {
+    display: block;
+  }
+}

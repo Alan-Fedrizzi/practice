@@ -1,0 +1,26 @@
+.button-arrow {
+  cursor: pointer;
+  height: 2.4rem;
+  width: 2.4rem;
+  background-color: transparent;
+  color: var(--color-text);
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &:hover {
+    color: var(--color-brand-3);
+  }
+
+  &__icon {
+    height: 2.4rem;
+    width: 2.4rem;
+    transition: all 0.5s;
+  }
+}
+
+// Accordion open
+.accordion.open .button-arrow__icon {
+  transform: rotate(180deg);
+}
