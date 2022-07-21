@@ -1,0 +1,58 @@
+:host(.test-button) {
+  --background-color: #14a2b8;
+  --text-color: #f9fafa;
+  --padding: 8px 32px;
+  --font-size: 16px;
+  --line-height: 16px;
+  --height: 48px;
+}
+
+// default
+.test-button {
+  &__tag {
+    display: block;
+    border: none;
+    cursor: pointer;
+    border-radius: 100px;
+    background-color: var(--background-color);
+    padding: var(--padding);
+    font-size: var(--font-size);
+    font-weight: 600;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    line-height: var(--line-height);
+    height: var(--height);
+  }
+}
+
+// sizes
+.test-button {
+  &--sm {
+    --height: 40px;
+  }
+
+  &--xs {
+    --padding: 8px 24px;
+    --height: 32px;
+    --font-size: 14px;
+  }
+
+  &--xxs {
+    --padding: 0 16px;
+    --height: 24px;
+    --font-size: 12px;
+    --line-height: 12px;
+  }
+}
+
+// color
+.test-button {
+  &--secondary {
+    --background-color: #0f7888;
+  }
+
+  &--grey {
+    --background-color: #404d4f;
+    --text-color: #6e8386;
+  }
+}
