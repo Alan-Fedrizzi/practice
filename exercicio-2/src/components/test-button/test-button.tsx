@@ -7,20 +7,24 @@ import { generateClasses } from '../../utils/utils';
   shadow: true,
 })
 export class TestButton {
+  @Prop() expand?: string;
   @Prop() size?: string;
-  @Prop() color?: string;
+  @Prop() disabled = false;
 
   render() {
     return (
       <Host
         class={generateClasses(null, {
           'test-button': true,
+          [`test-button--${this.expand}`]: this.expand !== undefined,
           [`test-button--${this.size}`]: this.size !== undefined,
-          [`test-button--${this.color}`]: this.color !== undefined,
+          'test-button--disabled': this.disabled,
         })}
       >
         <button class="test-button__tag">
+          <slot name="start"></slot>
           <slot></slot>
+          <slot name="end"></slot>
         </button>
       </Host>
     );

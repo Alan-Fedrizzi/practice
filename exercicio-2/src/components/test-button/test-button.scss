@@ -1,26 +1,67 @@
 :host(.test-button) {
   --background-color: #14a2b8;
-  --text-color: #f9fafa;
+  --background-color-hover: #0f7888;
+  --background-color-disabled: #404d4f;
+  --color: #f9fafa;
+  --color-disabled: #6e8386;
   --padding: 8px 32px;
   --font-size: 16px;
   --line-height: 16px;
   --height: 48px;
+  --width: initial;
+  --display: inline-block;
+  --height-icon: 24px;
+  --width-icon: 24px;
+
+  display: var(--display);
 }
 
 // default
 .test-button__tag {
-  display: block;
   border: none;
   cursor: pointer;
   border-radius: 100px;
-  background-color: var(--background-color);
   padding: var(--padding);
   font-size: var(--font-size);
   font-weight: 600;
-  color: var(--text-color);
+  color: var(--color);
   background-color: var(--background-color);
   line-height: var(--line-height);
   height: var(--height);
+  width: var(--width);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+// icon
+::slotted(svg) {
+  height: var(--height-icon);
+  width: var(--width-icon);
+  stroke: var(--color);
+}
+
+::slotted([name='start']) {
+  margin-right: 8px;
+}
+
+::slotted([name='end']) {
+  margin-left: 8px;
+}
+
+// states
+:host(.test-button:hover) {
+  --background-color: var(--background-color-hover);
+}
+
+:host(.test-button--disabled) {
+  --background-color: var(--background-color-disabled);
+  --color: var(--color-disabled);
+  pointer-events: none;
+}
+
+:host(.test-button--disabled) ::slotted(svg) {
+  stroke: var(--color-disabled);
 }
 
 // sizes
@@ -34,6 +75,11 @@
   --font-size: 14px;
 }
 
+:host(.test-button--xs) ::slotted(svg) {
+  --height-icon: 16px;
+  --width-icon: 16px;
+}
+
 :host(.test-button--xxs) {
   --padding: 0 16px;
   --height: 24px;
@@ -41,12 +87,13 @@
   --line-height: 12px;
 }
 
-// color
-:host(.test-button--secondary) {
-  --background-color: #0f7888;
+:host(.test-button--xxs) ::slotted(svg) {
+  --height-icon: 16px;
+  --width-icon: 16px;
 }
 
-:host(.test-button--grey) {
-  --background-color: #404d4f;
-  --text-color: #6e8386;
+// block
+:host(.test-button--block) {
+  --width: 100%;
+  --display: block;
 }
