@@ -1,0 +1,30 @@
+.header {
+  background-color: var(--color-background);
+
+  &__title-container {
+    padding: 1.6rem;
+    text-align: center;
+  }
+
+  &__year {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.2rem 2.4rem;
+    background-color: var(--color-background-light);
+  }
+
+  &__button {
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    height: 2.4rem;
+    width: 2.4rem;
+  }
+
+  &__icon {
+    height: 2.4rem;
+    width: 2.4rem;
+    color: var(--color-grey-dark);
+  }
+}
