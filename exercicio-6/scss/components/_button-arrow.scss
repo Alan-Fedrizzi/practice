@@ -1,0 +1,21 @@
+.button-arrow {
+  cursor: pointer;
+  height: 2.4rem;
+  width: 2.4rem;
+  background-color: transparent;
+  color: var(--color-text);
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &:hover {
+    color: var(--color-primary);
+  }
+
+  &__icon {
+    height: 2.4rem;
+    width: 2.4rem;
+    transition: all 0.3s;
+  }
+}

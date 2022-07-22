@@ -1,0 +1,44 @@
+.resultado {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.8rem 1.6rem;
+  background: linear-gradient(
+    to right,
+    var(--color-background-light),
+    var(--color-primary-dark)
+  );
+
+  &__date {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+  }
+
+  &__icon {
+    height: 2.4rem;
+    width: 2.4rem;
+  }
+
+  &__icon--primary {
+    color: var(--color-primary);
+  }
+
+  &__text {
+    font-size: 1.2rem;
+    color: var(--color-primary);
+  }
+
+  &__position {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+  }
+
+  &__number {
+    font-size: 1.6rem;
+    line-height: 2rem;
+    font-weight: 700;
+  }
+}
