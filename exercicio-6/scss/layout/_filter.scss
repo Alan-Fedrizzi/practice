@@ -1,0 +1,29 @@
+.filter {
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: var(--color-primary-dark);
+  // display: none;
+  transform: translateX(100%);
+  transition: all 0.5s ease-in-out;
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.2rem 1.6rem;
+    background-color: var(--color-background);
+  }
+
+  &__icon {
+    height: 2.4rem;
+    width: 2.4rem;
+  }
+}
+
+// filter open
+.filter.open {
+  transform: translateX(0);
+}

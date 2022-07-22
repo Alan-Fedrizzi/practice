@@ -225,6 +225,20 @@ body {
   align-items: center;
   gap: 0.8rem;
 }
+.resultado__button {
+  cursor: pointer;
+  height: 2.4rem;
+  width: 2.4rem;
+  background-color: transparent;
+  color: var(--color-text);
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.resultado__button:hover {
+  color: var(--color-primary);
+}
 .resultado__icon {
   height: 2.4rem;
   width: 2.4rem;
@@ -251,7 +265,34 @@ body {
   max-width: 50rem;
   height: 100vh;
   margin: 0 auto;
-  padding: 2rem 0;
+  overflow: hidden;
+  position: relative;
+}
+
+.filter {
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: var(--color-primary-dark);
+  transform: translateX(100%);
+  transition: all 0.5s ease-in-out;
+}
+.filter__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem 1.6rem;
+  background-color: var(--color-background);
+}
+.filter__icon {
+  height: 2.4rem;
+  width: 2.4rem;
+}
+
+.filter.open {
+  transform: translateX(0);
 }
 
 .header {
@@ -284,7 +325,7 @@ body {
 .main {
   background-color: var(--color-background);
   padding: 2.4rem;
-  height: calc(100vh - 13.6rem);
+  height: calc(100vh - 9.6rem);
   overflow: auto;
 }
 
