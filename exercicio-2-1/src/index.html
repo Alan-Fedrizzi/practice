@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0" />
+    <title>Stencil Component Starter</title>
+
+    <script type="module" src="/build/exercicio-2-1.esm.js"></script>
+    <script nomodule src="/build/exercicio-2-1.js"></script>
+
+    <style>
+      .container {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+      }
+      .container__inner {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <!-- size -->
+      <div class="container__inner">
+        <primary-button size="md">Button md</primary-button>
+        <primary-button size="sm">Button sm</primary-button>
+        <primary-button size="xs">Button xs</primary-button>
+        <primary-button size="xxs">Button xxs</primary-button>
+      </div>
+
+      <!-- disabled -->
+      <div class="container__inner">
+        <primary-button size="md" disabled> Button md </primary-button>
+        <primary-button size="sm" disabled> Button sm </primary-button>
+        <primary-button size="xs" disabled> Button xs </primary-button>
+        <primary-button size="xxs" disabled> Button xxs </primary-button>
+      </div>
+
+      <!-- block -->
+      <div class="container__inner">
+        <primary-button size="md" expand="block"> Button md block </primary-button>
+        <primary-button size="sm" expand="block"> Button sm block </primary-button>
+        <primary-button size="xs" expand="block"> Button xs block </primary-button>
+        <primary-button size="xxs" expand="block"> Button xxs block </primary-button>
+      </div>
+
+      <!-- block disabled -->
+      <div class="container__inner">
+        <primary-button size="md" expand="block" disabled> Button md block </primary-button>
+        <primary-button size="sm" expand="block" disabled> Button sm block </primary-button>
+        <primary-button size="xs" expand="block" disabled> Button xs block </primary-button>
+        <primary-button size="xxs" expand="block" disabled> Button xxs block </primary-button>
+      </div>
+
+      <!-- button icon left -->
+      <!-- size -->
+      <div class="container__inner">
+        <primary-button size="md">
+          <svg name="start">
+            <use xlink:href="./assets/symbol-defs.svg#icon-arrow-left"></use>
+          </svg>
+          Button md</primary-button
+        >
+        <primary-button size="sm">
+          <svg name="start">
+            <use xlink:href="./assets/symbol-defs.svg#icon-arrow-left"></use>
+          </svg>
+          Button sm</primary-button
+        >
+        <primary-button size="xs">
+          <svg name="start">
+            <use xlink:href="./assets/symbol-defs.svg#icon-arrow-left"></use>
+          </svg>
+          Button xs</primary-button
+        >
+        <primary-button size="xxs">
+          <svg name="start">
+            <use xlink:href="./assets/symbol-defs.svg#icon-arrow-left"></use>
+          </svg>
+          Button xxs</primary-button
+        >
+      </div>
+
+      <!-- disabled -->
+      <div class="container__inner">
+        <primary-button size="md" disabled>
+          <svg name="start">
+            <use xlink:href="./assets/symbol-defs.svg#icon-arrow-left"></use>
+          </svg>
+          Button md</primary-button
+        >
+        <primary-button size="sm" disabled>
+          <svg name="start">
+            <use xlink:href="./assets/symbol-defs.svg#icon-arrow-left"></use>
+          </svg>
+          Button sm</primary-button
+        >
+        <primary-button size="xs" disabled>
+          <svg name="start">
+            <use xlink:href="./assets/symbol-defs.svg#icon-arrow-left"></use>
+          </svg>
+          Button xs</primary-button
+        >
+        <primary-button size="xxs" disabled>
+          <svg name="start">
+            <use xlink:href="./assets/symbol-defs.svg#icon-arrow-left"></use>
+          </svg>
+          Button xxs</primary-button
+        >
+      </div>
+
+      <!-- block -->
+      <div class="container__inner">
+        <primary-button size="md" expand="block">
+          <svg name="start">
+            <use xlink:href="./assets/symbol-defs.svg#icon-arrow-left"></use>
+          </svg>
+          Button md</primary-button
+        >
+        <primary-button size="sm" expand="block">
+          <svg name="start">
+            <use xlink:href="./assets/symbol-defs.svg#icon-arrow-left"></use>
+          </svg>
+          Button sm</primary-button
+        >
+        <primary-button size="xs" expand="block">
+          <svg name="start">
+            <use xlink:href="./assets/symbol-defs.svg#icon-arrow-left"></use>
+          </svg>
+          Button xs</primary-button
+        >
+        <primary-button size="xxs" expand="block">
+          <svg name="start">
+            <use xlink:href="./assets/symbol-defs.svg#icon-arrow-left"></use>
+          </svg>
+          Button xxs</primary-button
+        >
+      </div>
+
+      <!-- block disabled -->
+      <div class="container__inner">
+        <primary-button size="md" expand="block" disabled>
+          <svg name="start">
+            <use xlink:href="./assets/symbol-defs.svg#icon-arrow-left"></use>
+          </svg>
+          Button md</primary-button
+        >
+        <primary-button size="sm" expand="block" disabled>
+          <svg name="start">
+            <use xlink:href="./assets/symbol-defs.svg#icon-arrow-left"></use>
+          </svg>
+          Button sm</primary-button
+        >
+        <primary-button size="xs" expand="block" disabled>
+          <svg name="start">
+            <use xlink:href="./assets/symbol-defs.svg#icon-arrow-left"></use>
+          </svg>
+          Button xs</primary-button
+        >
+        <primary-button size="xxs" expand="block" disabled>
+          <svg name="start">
+            <use xlink:href="./assets/symbol-defs.svg#icon-arrow-left"></use>
+          </svg>
+          Button xxs</primary-button
+        >
+      </div>
+
+      <!-- button icon right -->
+      <!-- size -->
+      <div class="container__inner">
+        <primary-button size="md">
+          Button md
+          <svg name="end">
+            <use xlink:href="./assets/symbol-defs.svg#icon-arrow-right"></use>
+          </svg>
+        </primary-button>
+        <primary-button size="sm">
+          Button sm
+          <svg name="end">
+            <use xlink:href="./assets/symbol-defs.svg#icon-arrow-right"></use>
+          </svg>
+        </primary-button>
+        <primary-button size="xs">
+          Button xs
+          <svg name="end">
+            <use xlink:href="./assets/symbol-defs.svg#icon-arrow-right"></use>
+          </svg>
+        </primary-button>
+        <primary-button size="xxs">
+          Button xxs
+          <svg name="end">
+            <use xlink:href="./assets/symbol-defs.svg#icon-arrow-right"></use>
+          </svg>
+        </primary-button>
+      </div>
+
+      <!-- disabled -->
+      <div class="container__inner">
+        <primary-button size="md" disabled>
+          Button md
+          <svg name="end">
+            <use xlink:href="./assets/symbol-defs.svg#icon-arrow-right"></use>
+          </svg>
+        </primary-button>
+        <primary-button size="sm" disabled>
+          Button sm
+          <svg name="end">
+            <use xlink:href="./assets/symbol-defs.svg#icon-arrow-right"></use>
+          </svg>
+        </primary-button>
+        <primary-button size="xs" disabled>
+          Button xs
+          <svg name="end">
+            <use xlink:href="./assets/symbol-defs.svg#icon-arrow-right"></use>
+          </svg>
+        </primary-button>
+        <primary-button size="xxs" disabled>
+          Button xxs
+          <svg name="end">
+            <use xlink:href="./assets/symbol-defs.svg#icon-arrow-right"></use>
+          </svg>
+        </primary-button>
+      </div>
+
+      <!-- block -->
+      <div class="container__inner">
+        <primary-button size="md" expand="block">
+          Button md
+          <svg name="end">
+            <use xlink:href="./assets/symbol-defs.svg#icon-arrow-right"></use>
+          </svg>
+        </primary-button>
+        <primary-button size="sm" expand="block">
+          Button sm
+          <svg name="end">
+            <use xlink:href="./assets/symbol-defs.svg#icon-arrow-right"></use>
+          </svg>
+        </primary-button>
+        <primary-button size="xs" expand="block">
+          Button xs
+          <svg name="end">
+            <use xlink:href="./assets/symbol-defs.svg#icon-arrow-right"></use>
+          </svg>
+        </primary-button>
+        <primary-button size="xxs" expand="block">
+          Button xxs
+          <svg name="end">
+            <use xlink:href="./assets/symbol-defs.svg#icon-arrow-right"></use>
+          </svg>
+        </primary-button>
+      </div>
+
+      <!-- block disabled -->
+      <div class="container__inner">
+        <primary-button size="md" expand="block" disabled>
+          Button md
+          <svg name="end">
+            <use xlink:href="./assets/symbol-defs.svg#icon-arrow-right"></use>
+          </svg>
+        </primary-button>
+        <primary-button size="sm" expand="block" disabled>
+          Button sm
+          <svg name="end">
+            <use xlink:href="./assets/symbol-defs.svg#icon-arrow-right"></use>
+          </svg>
+        </primary-button>
+        <primary-button size="xs" expand="block" disabled>
+          Button xs
+          <svg name="end">
+            <use xlink:href="./assets/symbol-defs.svg#icon-arrow-right"></use>
+          </svg>
+        </primary-button>
+        <primary-button size="xxs" expand="block" disabled>
+          Button xxs
+          <svg name="end">
+            <use xlink:href="./assets/symbol-defs.svg#icon-arrow-right"></use>
+          </svg>
+        </primary-button>
+      </div>
+
+      <!-- button icon left right -->
+      <!-- size -->
+      <div class="container__inner">
+        <primary-button size="md">
+          <svg name="start">
+            <use xlink:href="./assets/symbol-defs.svg#icon-arrow-left"></use>
+          </svg>
+          Button md
+          <svg name="end">
+            <use xlink:href="./assets/symbol-defs.svg#icon-arrow-right"></use>
+          </svg>
+        </primary-button>
+        <primary-button size="sm">
+          <svg name="start">
+            <use xlink:href="./assets/symbol-defs.svg#icon-arrow-left"></use>
+          </svg>
+          Button sm
+          <svg name="end">
+            <use xlink:href="./assets/symbol-defs.svg#icon-arrow-right"></use>
+          </svg>
+        </primary-button>
+        <primary-button size="xs">
+          <svg name="start">
+            <use xlink:href="./assets/symbol-defs.svg#icon-arrow-left"></use>
+          </svg>
+          Button xs
+          <svg name="end">
+            <use xlink:href="./assets/symbol-defs.svg#icon-arrow-right"></use>
+          </svg>
+        </primary-button>
+        <primary-button size="xxs">
+          <svg name="start">
+            <use xlink:href="./assets/symbol-defs.svg#icon-arrow-left"></use>
+          </svg>
+          Button xxs
+          <svg name="end">
+            <use xlink:href="./assets/symbol-defs.svg#icon-arrow-right"></use>
+          </svg>
+        </primary-button>
+      </div>
+
+      <!-- disabled -->
+      <div class="container__inner">
+        <primary-button size="md" disabled>
+          <svg name="start">
+            <use xlink:href="./assets/symbol-defs.svg#icon-arrow-left"></use>
+          </svg>
+          Button md
+          <svg name="end">
+            <use xlink:href="./assets/symbol-defs.svg#icon-arrow-right"></use>
+          </svg>
+        </primary-button>
+        <primary-button size="sm" disabled>
+          <svg name="start">
+            <use xlink:href="./assets/symbol-defs.svg#icon-arrow-left"></use>
+          </svg>
+          Button sm
+          <svg name="end">
+            <use xlink:href="./assets/symbol-defs.svg#icon-arrow-right"></use>
+          </svg>
+        </primary-button>
+        <primary-button size="xs" disabled>
+          <svg name="start">
+            <use xlink:href="./assets/symbol-defs.svg#icon-arrow-left"></use>
+          </svg>
+          Button xs
+          <svg name="end">
+            <use xlink:href="./assets/symbol-defs.svg#icon-arrow-right"></use>
+          </svg>
+        </primary-button>
+        <primary-button size="xxs" disabled>
+          <svg name="start">
+            <use xlink:href="./assets/symbol-defs.svg#icon-arrow-left"></use>
+          </svg>
+          Button xxs
+          <svg name="end">
+            <use xlink:href="./assets/symbol-defs.svg#icon-arrow-right"></use>
+          </svg>
+        </primary-button>
+      </div>
+
+      <!-- block -->
+      <div class="container__inner">
+        <primary-button size="md" expand="block">
+          <svg name="start">
+            <use xlink:href="./assets/symbol-defs.svg#icon-arrow-left"></use>
+          </svg>
+          Button md
+          <svg name="end">
+            <use xlink:href="./assets/symbol-defs.svg#icon-arrow-right"></use>
+          </svg>
+        </primary-button>
+        <primary-button size="sm" expand="block">
+          <svg name="start">
+            <use xlink:href="./assets/symbol-defs.svg#icon-arrow-left"></use>
+          </svg>
+          Button sm
+          <svg name="end">
+            <use xlink:href="./assets/symbol-defs.svg#icon-arrow-right"></use>
+          </svg>
+        </primary-button>
+        <primary-button size="xs" expand="block">
+          <svg name="start">
+            <use xlink:href="./assets/symbol-defs.svg#icon-arrow-left"></use>
+          </svg>
+          Button xs
+          <svg name="end">
+            <use xlink:href="./assets/symbol-defs.svg#icon-arrow-right"></use>
+          </svg>
+        </primary-button>
+        <primary-button size="xxs" expand="block">
+          <svg name="start">
+            <use xlink:href="./assets/symbol-defs.svg#icon-arrow-left"></use>
+          </svg>
+          Button xxs
+          <svg name="end">
+            <use xlink:href="./assets/symbol-defs.svg#icon-arrow-right"></use>
+          </svg>
+        </primary-button>
+      </div>
+
+      <!-- block disabled -->
+      <div class="container__inner">
+        <primary-button size="md" expand="block" disabled>
+          <svg name="start">
+            <use xlink:href="./assets/symbol-defs.svg#icon-arrow-left"></use>
+          </svg>
+          Button md
+          <svg name="end">
+            <use xlink:href="./assets/symbol-defs.svg#icon-arrow-right"></use>
+          </svg>
+        </primary-button>
+        <primary-button size="sm" expand="block" disabled>
+          <svg name="start">
+            <use xlink:href="./assets/symbol-defs.svg#icon-arrow-left"></use>
+          </svg>
+          Button sm
+          <svg name="end">
+            <use xlink:href="./assets/symbol-defs.svg#icon-arrow-right"></use>
+          </svg>
+        </primary-button>
+        <primary-button size="xs" expand="block" disabled>
+          <svg name="start">
+            <use xlink:href="./assets/symbol-defs.svg#icon-arrow-left"></use>
+          </svg>
+          Button xs
+          <svg name="end">
+            <use xlink:href="./assets/symbol-defs.svg#icon-arrow-right"></use>
+          </svg>
+        </primary-button>
+        <primary-button size="xxs" expand="block" disabled>
+          <svg name="start">
+            <use xlink:href="./assets/symbol-defs.svg#icon-arrow-left"></use>
+          </svg>
+          Button xxs
+          <svg name="end">
+            <use xlink:href="./assets/symbol-defs.svg#icon-arrow-right"></use>
+          </svg>
+        </primary-button>
+      </div>
+    </div>
+  </body>
+</html>

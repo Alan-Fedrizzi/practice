@@ -1,0 +1,100 @@
+:host(.primary-button) {
+  --background-color: #14a2b8;
+  --background-color-hover: #0f7888;
+  --background-color-disabled: #404d4f;
+  --color: #f9fafa;
+  --color-disabled: #6e8386;
+  --padding: 8px 32px;
+  --font-size: 16px;
+  --line-height: 16px;
+  --height: 48px;
+  --width: initial;
+  --height-icon: 24px;
+  --width-icon: 24px;
+  --display: inline-block;
+
+  display: var(--display);
+}
+
+// default
+.primary-button__default {
+  cursor: pointer;
+  border: none;
+  background-color: var(--background-color);
+  color: var(--color);
+  font-size: var(--font-size);
+  font-weight: 600;
+  line-height: var(--line-height);
+  padding: var(--padding);
+  border-radius: 100px;
+  height: var(--height);
+  width: var(--width);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.2s;
+}
+
+// icon
+::slotted(svg) {
+  height: var(--height-icon);
+  width: var(--width-icon);
+  stroke: var(--color);
+}
+
+::slotted([name='start']) {
+  margin-right: 8px;
+}
+
+::slotted([name='end']) {
+  margin-left: 8px;
+}
+
+// states
+:host(.primary-button:hover) {
+  --background-color: var(--background-color-hover);
+}
+
+:host(.primary-button--disabled) {
+  --background-color: var(--background-color-disabled);
+  --color: var(--color-disabled);
+  pointer-events: none;
+}
+
+:host(.primary-button--disabled) ::slotted(svg) {
+  stroke: var(--color-disabled);
+}
+
+// size
+:host(.primary-button--sm) {
+  --height: 40px;
+}
+
+:host(.primary-button--xs) {
+  --font-size: 14px;
+  ---padding: 8px 24px;
+  --height: 32px;
+}
+
+:host(.primary-button--xs) ::slotted(svg) {
+  --height-icon: 16px;
+  --width-icon: 16px;
+}
+
+:host(.primary-button--xxs) {
+  --font-size: 12px;
+  --line-height: 12px;
+  --padding: 0 16px;
+  --height: 24px;
+}
+
+:host(.primary-button--xxs) ::slotted(svg) {
+  --height-icon: 16px;
+  --width-icon: 16px;
+}
+
+// block
+:host(.primary-button--block) {
+  --width: 100%;
+  --display: block;
+}
