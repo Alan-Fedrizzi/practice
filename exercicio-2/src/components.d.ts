@@ -9,6 +9,7 @@ export namespace Components {
     interface TestButton {
         "disabled": boolean;
         "expand"?: string;
+        "name"?: string;
         "size"?: string;
     }
 }
@@ -27,6 +28,7 @@ declare namespace LocalJSX {
     interface TestButton {
         "disabled"?: boolean;
         "expand"?: string;
+        "name"?: string;
         "size"?: string;
     }
     interface IntrinsicElements {

@@ -1,9 +1,15 @@
 :host(.test-button) {
-  --background-color: #14a2b8;
-  --background-color-hover: #0f7888;
-  --background-color-disabled: #404d4f;
-  --color: #f9fafa;
-  --color-disabled: #6e8386;
+  --color-brand-2: #0f7888;
+  --color-brand-3: #14a2b8;
+  --color-neutral-3: #404d4f;
+  --color-neutral-5: #6e8386;
+  --color-neutral-10: #f9fafa;
+
+  --background-color: var(--color-brand-3);
+  --background-color-hover: var(--color-brand-2);
+  --background-color-disabled: var(--color-neutral-3);
+  --color: var(--color-neutral-10);
+  --color-disabled: var(--color-neutral-5);
   --padding: 8px 32px;
   --font-size: 16px;
   --line-height: 16px;
@@ -12,13 +18,14 @@
   --display: inline-block;
   --height-icon: 24px;
   --width-icon: 24px;
+  --border: none;
 
   display: var(--display);
 }
 
 // default
 .test-button__tag {
-  border: none;
+  border: var(--border);
   cursor: pointer;
   border-radius: 100px;
   padding: var(--padding);
@@ -96,4 +103,11 @@
 :host(.test-button--block) {
   --width: 100%;
   --display: block;
+}
+
+// secondary
+:host(.test-button--secondary) {
+  --background-color: transparent;
+  --color: var(--color-brand-3);
+  --border: 1px solid var(--color-brand-3);
 }

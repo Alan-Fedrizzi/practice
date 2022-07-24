@@ -9,6 +9,7 @@ import { generateClasses } from '../../utils/utils';
 export class TestButton {
   @Prop() expand?: string;
   @Prop() size?: string;
+  @Prop() name?: string;
   @Prop() disabled = false;
 
   render() {
@@ -18,6 +19,7 @@ export class TestButton {
           'test-button': true,
           [`test-button--${this.expand}`]: this.expand !== undefined,
           [`test-button--${this.size}`]: this.size !== undefined,
+          [`test-button--${this.name}`]: this.name !== undefined,
           'test-button--disabled': this.disabled,
         })}
       >
