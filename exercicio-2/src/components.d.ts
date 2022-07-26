@@ -6,6 +6,13 @@
  */
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 export namespace Components {
+    interface BadgeTest {
+        "name"?: string;
+        "size"?: string;
+    }
+    interface ProgressBar {
+        "porcentagem"?: string;
+    }
     interface TestButton {
         "disabled": boolean;
         "expand"?: string;
@@ -14,6 +21,18 @@ export namespace Components {
     }
 }
 declare global {
+    interface HTMLBadgeTestElement extends Components.BadgeTest, HTMLStencilElement {
+    }
+    var HTMLBadgeTestElement: {
+        prototype: HTMLBadgeTestElement;
+        new (): HTMLBadgeTestElement;
+    };
+    interface HTMLProgressBarElement extends Components.ProgressBar, HTMLStencilElement {
+    }
+    var HTMLProgressBarElement: {
+        prototype: HTMLProgressBarElement;
+        new (): HTMLProgressBarElement;
+    };
     interface HTMLTestButtonElement extends Components.TestButton, HTMLStencilElement {
     }
     var HTMLTestButtonElement: {
@@ -21,10 +40,19 @@ declare global {
         new (): HTMLTestButtonElement;
     };
     interface HTMLElementTagNameMap {
+        "badge-test": HTMLBadgeTestElement;
+        "progress-bar": HTMLProgressBarElement;
         "test-button": HTMLTestButtonElement;
     }
 }
 declare namespace LocalJSX {
+    interface BadgeTest {
+        "name"?: string;
+        "size"?: string;
+    }
+    interface ProgressBar {
+        "porcentagem"?: string;
+    }
     interface TestButton {
         "disabled"?: boolean;
         "expand"?: string;
@@ -32,6 +60,8 @@ declare namespace LocalJSX {
         "size"?: string;
     }
     interface IntrinsicElements {
+        "badge-test": BadgeTest;
+        "progress-bar": ProgressBar;
         "test-button": TestButton;
     }
 }
@@ -39,6 +69,8 @@ export { LocalJSX as JSX };
 declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
+            "badge-test": LocalJSX.BadgeTest & JSXBase.HTMLAttributes<HTMLBadgeTestElement>;
+            "progress-bar": LocalJSX.ProgressBar & JSXBase.HTMLAttributes<HTMLProgressBarElement>;
             "test-button": LocalJSX.TestButton & JSXBase.HTMLAttributes<HTMLTestButtonElement>;
         }
     }
