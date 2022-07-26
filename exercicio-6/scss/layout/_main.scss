@@ -1,0 +1,11 @@
+.main {
+  background-color: var(--color-background);
+  padding: 2.4rem;
+  height: calc(100vh - 9.6rem);
+  overflow: auto;
+}
+
+// accordion
+.main .accordion:not(:last-child) {
+  margin-bottom: 2.4rem;
+}

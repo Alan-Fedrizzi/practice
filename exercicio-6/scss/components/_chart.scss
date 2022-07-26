@@ -1,0 +1,40 @@
+.chart {
+  height: 6.4rem;
+  width: 6.4rem;
+
+  &__external {
+    height: 6.4rem;
+    width: 6.4rem;
+    border-radius: 50%;
+    background-image: conic-gradient(
+      var(--color-primary-light) 87%,
+      var(--color-orange) 87% 100%,
+      var(--color-background) 100% 100%
+    );
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__internal {
+    height: 5.8rem;
+    width: 5.8rem;
+    border-radius: 50%;
+    background-color: var(--color-background-light);
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  &__number {
+    font-size: 1.6rem;
+    font-weight: 700;
+  }
+
+  &__text {
+    font-size: 1rem;
+    color: var(--color-grey);
+  }
+}
