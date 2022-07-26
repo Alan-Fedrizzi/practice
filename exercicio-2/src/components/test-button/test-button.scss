@@ -1,0 +1,181 @@
+:host(.test-button) {
+  --color-brand-2: #0f7888;
+  --color-brand-3: #14a2b8;
+  --color-neutral-3: #404d4f;
+  --color-neutral-5: #6e8386;
+  --color-neutral-10: #f9fafa;
+
+  --background-color: var(--color-brand-3);
+  --background-color-hover: var(--color-brand-2);
+  --background-color-disabled: var(--color-neutral-3);
+  --color: var(--color-neutral-10);
+  --color-disabled: var(--color-neutral-5);
+  --padding: 16px 32px;
+  --font-size: 16px;
+  --line-height: 16px;
+  --height: 48px;
+  --width: initial;
+  --display: inline-block;
+  --height-icon: 24px;
+  --width-icon: 24px;
+  --border: 1px solid transparent;
+  --border-radius: 100px;
+  --transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+  --icon-transition: stroke 0.3s;
+
+  display: var(--display);
+}
+
+// default
+.test-button__tag {
+  cursor: pointer;
+  border: var(--border);
+  border-radius: var(--border-radius);
+  padding: var(--padding);
+  font-size: var(--font-size);
+  font-weight: 600;
+  color: var(--color);
+  background-color: var(--background-color);
+  line-height: var(--line-height);
+  height: var(--height);
+  width: var(--width);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: var(--transition);
+}
+
+// icon
+::slotted(svg) {
+  height: var(--height-icon);
+  width: var(--width-icon);
+  stroke: var(--color);
+  transition: var(--icon-transition);
+}
+
+::slotted([name='start']) {
+  margin-right: 8px;
+  margin-left: -8px;
+}
+
+::slotted([name='end']) {
+  margin-left: 8px;
+  margin-right: -8px;
+}
+
+// states
+:host(.test-button:hover) {
+  --background-color: var(--background-color-hover);
+}
+
+:host(.test-button--disabled) {
+  --background-color: var(--background-color-disabled);
+  --color: var(--color-disabled);
+  pointer-events: none;
+}
+
+:host(.test-button--disabled) ::slotted(svg) {
+  stroke: var(--color-disabled);
+}
+
+// sizes
+:host(.test-button--sm) {
+  --padding: 12px 32px;
+  --height: 40px;
+}
+
+:host(.test-button--xs) {
+  --padding: 8px 24px;
+  --height: 32px;
+  --font-size: 14px;
+  --line-height: 16px;
+}
+
+:host(.test-button--xs) ::slotted(svg) {
+  --height-icon: 16px;
+  --width-icon: 16px;
+}
+
+:host(.test-button--xxs) {
+  --padding: 6px 16px;
+  --height: 24px;
+  --font-size: 12px;
+  --line-height: 12px;
+}
+
+:host(.test-button--xxs) ::slotted(svg) {
+  --height-icon: 16px;
+  --width-icon: 16px;
+}
+
+:host(.test-button--xxs) ::slotted([name='start']) {
+  margin-left: -4px;
+}
+
+:host(.test-button--xxs) ::slotted([name='end']) {
+  margin-right: -4px;
+}
+
+// block
+:host(.test-button--block) {
+  --width: 100%;
+  --display: block;
+}
+
+// secondary
+:host(.test-button--secondary) {
+  --background-color: transparent;
+  --color: var(--color-brand-3);
+  --border: 1px solid var(--color-brand-3);
+}
+
+// states
+:host(.test-button--secondary:hover) {
+  --background-color: transparent;
+  --border: 1px solid var(--color-brand-2);
+}
+
+:host(.test-button--secondary.test-button--disabled) {
+  --color: var(--color-neutral-5);
+  --border: 1px solid var(--color-neutral-3);
+  pointer-events: none;
+}
+
+// tertiary
+:host(.test-button--tertiary) {
+  --border-radius: 0;
+  --padding: 16px;
+  --background-color: transparent;
+}
+
+:host(.test-button--tertiary) ::slotted([name='start']) {
+  margin-left: 0;
+}
+
+:host(.test-button--tertiary) ::slotted([name='end']) {
+  margin-right: 0;
+}
+
+// sizes
+:host(.test-button--tertiary.test-button--sm) {
+  --padding: 12px 16px;
+}
+
+:host(.test-button--tertiary.test-button--xs) {
+  --padding: 8px 12px;
+}
+
+:host(.test-button--tertiary.test-button--xxs) {
+  --padding: 4px 12px;
+}
+
+// states
+:host(.test-button--tertiary:hover) {
+  --color: var(--color-brand-3);
+  --background-color: transparent;
+}
+
+:host(.test-button--tertiary.test-button--disabled) {
+  --color: var(--color-neutral-5);
+  pointer-events: none;
+}
