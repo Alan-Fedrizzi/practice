@@ -15,6 +15,6 @@ const Template = ({ porcentagem }) => {
 export const Default = Template.bind({});
 Default.argTypes = {
   porcentagem: {
-    control: { type: 'range', min: 1, max: 100, step: 1 },
+    control: { type: 'range', min: 0, max: 100, step: 1 },
   },
 };

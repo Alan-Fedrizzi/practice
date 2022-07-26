@@ -8,7 +8,6 @@ import { generateClasses } from '../../utils/utils';
 })
 export class ProgressBar {
   @Prop() porcentagem?: string;
-  // @Prop() porcentagem?: number;
 
   render() {
     return (
