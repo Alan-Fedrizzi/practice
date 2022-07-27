@@ -1,5 +1,5 @@
 import { Component, Host, h, Prop } from '@stencil/core';
-import { generateClasses } from '../../utils/utils';
+import { generateMedColor } from '../../utils/utils';
 
 @Component({
   tag: 'test-button',
@@ -11,11 +11,12 @@ export class TestButton {
   @Prop() size?: string;
   @Prop() name?: string;
   @Prop() disabled = false;
+  @Prop() color?: string;
 
   render() {
     return (
       <Host
-        class={generateClasses(null, {
+        class={generateMedColor(this.color, {
           'test-button': true,
           [`test-button--${this.expand}`]: this.expand !== undefined,
           [`test-button--${this.size}`]: this.size !== undefined,

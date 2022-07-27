@@ -1,14 +1,29 @@
 export type CssClassMap = { [className: string]: boolean };
 
-/**
- *  Generates the color classes for the component.
- */
-export const generateClasses = (color: string | undefined | null, cssClassMap: CssClassMap): CssClassMap => {
-  return typeof color === 'string' && color.length > 0
-    ? {
-        'med-color': true,
-        [`med-color_${color}`]: true,
+export const generateMedColor = (color: any | undefined | null, cssClassMap: CssClassMap): CssClassMap => {
+  if (typeof color === 'string' && color.length > 0) {
+    const colorIdentifier = color.split('-');
+
+    if (colorIdentifier[0] === 'neutral') {
+      return {
+        'med-color-neutral': true,
+        [`med-color-${color}`]: true,
         ...cssClassMap,
-      }
-    : cssClassMap;
+      };
+    } else if (colorIdentifier[0] === 'fb') {
+      return {
+        'med-color-feedback': true,
+        [`med-color-${color}`]: true,
+        ...cssClassMap,
+      };
+    } else {
+      return {
+        'med-color': true,
+        [`med-color-${color}`]: true,
+        ...cssClassMap,
+      };
+    }
+  } else {
+    return cssClassMap;
+  }
 };

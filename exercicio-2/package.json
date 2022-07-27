@@ -22,14 +22,16 @@
     "build": "stencil build --docs",
     "start": "stencil build --watch",
     "test": "stencil test --spec --e2e",
-    "test.watch": "stencil test --spec --e2e --watchAll",
+    "test:watch": "stencil test --spec --e2e --watchAll",
     "generate": "stencil generate",
     "storybook": "start-storybook -s ./src/assets/ -p 6006",
-    "build-storybook": "build-storybook -s ./src/assets/",
-    "sb": "npm-run-all --parallel start storybook"
+    "build:storybook": "build-storybook -s ./src/assets/",
+    "watch:sass": "sass src/global/styles:css --watch",
+    "watch:storybook": "npm-run-all --parallel start watch:sass storybook"
   },
   "dependencies": {
-    "@stencil/core": "^2.13.0"
+    "@stencil/core": "^2.13.0",
+    "sass": "^1.54.0"
   },
   "devDependencies": {
     "@babel/core": "^7.18.9",

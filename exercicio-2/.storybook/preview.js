@@ -1,5 +1,6 @@
 import { defineCustomElements } from '../dist/esm/loader';
 defineCustomElements();
+import '../css/colors.css';
 
 export const parameters = {
   actions: { argTypesRegex: '^on[A-Z].*' },

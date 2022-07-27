@@ -4,7 +4,7 @@ export default {
   title: 'Components/Button',
 };
 
-const Template = ({ size, disabled, expand, name }) => {
+const Template = ({ size, disabled, expand, name, color }) => {
   return html`
     <style>
       div {
@@ -15,23 +15,23 @@ const Template = ({ size, disabled, expand, name }) => {
       }
     </style>
     <div>
-      <test-button size=${size} .disabled=${disabled} expand=${expand} name=${name}>Clique</test-button>
+      <test-button size=${size} .disabled=${disabled} expand=${expand} name=${name} color=${color}>Clique</test-button>
 
-      <test-button size="${size}" .disabled="${disabled}" expand="${expand}" name="${name}">
+      <test-button size="${size}" .disabled="${disabled}" expand="${expand}" name="${name}" color=${color}>
         <svg name="start">
           <use xlink:href="symbol-defs.svg#icon-arrow-left"></use>
         </svg>
         Clique
       </test-button>
 
-      <test-button size="${size}" .disabled="${disabled}" expand="${expand}" name="${name}">
+      <test-button size="${size}" .disabled="${disabled}" expand="${expand}" name="${name}" color=${color}>
         Clique
         <svg name="end">
           <use xlink:href="symbol-defs.svg#icon-arrow-right"></use>
         </svg>
       </test-button>
 
-      <test-button size="${size}" .disabled="${disabled}" expand="${expand}" name="${name}">
+      <test-button size="${size}" .disabled="${disabled}" expand="${expand}" name="${name}" color=${color}>
         <svg name="start">
           <use xlink:href="symbol-defs.svg#icon-arrow-left"></use>
         </svg>
@@ -65,6 +65,12 @@ Default.argTypes = {
   },
   name: {
     options: [undefined, 'primary', 'secondary', 'tertiary'],
+    control: {
+      type: 'select',
+    },
+  },
+  color: {
+    options: [undefined, 'brand'],
     control: {
       type: 'select',
     },

@@ -14,6 +14,7 @@ export namespace Components {
         "porcentagem"?: string;
     }
     interface TestButton {
+        "color"?: string;
         "disabled": boolean;
         "expand"?: string;
         "name"?: string;
@@ -54,6 +55,7 @@ declare namespace LocalJSX {
         "porcentagem"?: string;
     }
     interface TestButton {
+        "color"?: string;
         "disabled"?: boolean;
         "expand"?: string;
         "name"?: string;

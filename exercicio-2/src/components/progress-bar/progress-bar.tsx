@@ -1,5 +1,5 @@
 import { Component, Host, h, Prop } from '@stencil/core';
-import { generateClasses } from '../../utils/utils';
+import { generateMedColor } from '../../utils/utils';
 
 @Component({
   tag: 'progress-bar',
@@ -12,7 +12,7 @@ export class ProgressBar {
   render() {
     return (
       <Host
-        class={generateClasses(null, {
+        class={generateMedColor(null, {
           'progress-bar': true,
         })}
       >
