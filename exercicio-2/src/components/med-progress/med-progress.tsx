@@ -2,21 +2,21 @@ import { Component, Host, h, Prop } from '@stencil/core';
 import { generateMedColor } from '../../utils/utils';
 
 @Component({
-  tag: 'progress-bar',
-  styleUrl: 'progress-bar.scss',
+  tag: 'med-progress',
+  styleUrl: 'med-progress.scss',
   shadow: true,
 })
-export class ProgressBar {
+export class MedProgress {
   @Prop() porcentagem?: string;
 
   render() {
     return (
       <Host
         class={generateMedColor(null, {
-          'progress-bar': true,
+          'med-progress': true,
         })}
       >
-        <div class="progress-bar__default">&nbsp;</div>
+        <div class="med-progress__default">&nbsp;</div>
       </Host>
     );
   }

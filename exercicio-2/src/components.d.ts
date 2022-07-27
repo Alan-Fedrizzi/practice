@@ -6,74 +6,74 @@
  */
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 export namespace Components {
-    interface BadgeTest {
+    interface MedBadge {
         "name"?: string;
         "size"?: string;
     }
-    interface ProgressBar {
-        "porcentagem"?: string;
-    }
-    interface TestButton {
+    interface MedButton {
         "color"?: string;
         "disabled": boolean;
         "expand"?: string;
         "name"?: string;
         "size"?: string;
     }
+    interface MedProgress {
+        "porcentagem"?: string;
+    }
 }
 declare global {
-    interface HTMLBadgeTestElement extends Components.BadgeTest, HTMLStencilElement {
+    interface HTMLMedBadgeElement extends Components.MedBadge, HTMLStencilElement {
     }
-    var HTMLBadgeTestElement: {
-        prototype: HTMLBadgeTestElement;
-        new (): HTMLBadgeTestElement;
+    var HTMLMedBadgeElement: {
+        prototype: HTMLMedBadgeElement;
+        new (): HTMLMedBadgeElement;
     };
-    interface HTMLProgressBarElement extends Components.ProgressBar, HTMLStencilElement {
+    interface HTMLMedButtonElement extends Components.MedButton, HTMLStencilElement {
     }
-    var HTMLProgressBarElement: {
-        prototype: HTMLProgressBarElement;
-        new (): HTMLProgressBarElement;
+    var HTMLMedButtonElement: {
+        prototype: HTMLMedButtonElement;
+        new (): HTMLMedButtonElement;
     };
-    interface HTMLTestButtonElement extends Components.TestButton, HTMLStencilElement {
+    interface HTMLMedProgressElement extends Components.MedProgress, HTMLStencilElement {
     }
-    var HTMLTestButtonElement: {
-        prototype: HTMLTestButtonElement;
-        new (): HTMLTestButtonElement;
+    var HTMLMedProgressElement: {
+        prototype: HTMLMedProgressElement;
+        new (): HTMLMedProgressElement;
     };
     interface HTMLElementTagNameMap {
-        "badge-test": HTMLBadgeTestElement;
-        "progress-bar": HTMLProgressBarElement;
-        "test-button": HTMLTestButtonElement;
+        "med-badge": HTMLMedBadgeElement;
+        "med-button": HTMLMedButtonElement;
+        "med-progress": HTMLMedProgressElement;
     }
 }
 declare namespace LocalJSX {
-    interface BadgeTest {
+    interface MedBadge {
         "name"?: string;
         "size"?: string;
     }
-    interface ProgressBar {
-        "porcentagem"?: string;
-    }
-    interface TestButton {
+    interface MedButton {
         "color"?: string;
         "disabled"?: boolean;
         "expand"?: string;
         "name"?: string;
         "size"?: string;
     }
+    interface MedProgress {
+        "porcentagem"?: string;
+    }
     interface IntrinsicElements {
-        "badge-test": BadgeTest;
-        "progress-bar": ProgressBar;
-        "test-button": TestButton;
+        "med-badge": MedBadge;
+        "med-button": MedButton;
+        "med-progress": MedProgress;
     }
 }
 export { LocalJSX as JSX };
 declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
-            "badge-test": LocalJSX.BadgeTest & JSXBase.HTMLAttributes<HTMLBadgeTestElement>;
-            "progress-bar": LocalJSX.ProgressBar & JSXBase.HTMLAttributes<HTMLProgressBarElement>;
-            "test-button": LocalJSX.TestButton & JSXBase.HTMLAttributes<HTMLTestButtonElement>;
+            "med-badge": LocalJSX.MedBadge & JSXBase.HTMLAttributes<HTMLMedBadgeElement>;
+            "med-button": LocalJSX.MedButton & JSXBase.HTMLAttributes<HTMLMedButtonElement>;
+            "med-progress": LocalJSX.MedProgress & JSXBase.HTMLAttributes<HTMLMedProgressElement>;
         }
     }
 }

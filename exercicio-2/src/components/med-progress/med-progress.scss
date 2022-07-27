@@ -1,4 +1,4 @@
-:host(.progress-bar) {
+:host(.med-progress) {
   --color-brand-1: #0a515c;
   --color-brand-4: #47d5eb;
   --porcentagem: 0;
@@ -11,7 +11,7 @@
 }
 
 // default
-.progress-bar__default {
+.med-progress__default {
   height: var(--height);
   width: var(--width);
   background-image: var(--background-image);

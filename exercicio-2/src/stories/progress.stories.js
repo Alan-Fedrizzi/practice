@@ -7,7 +7,7 @@ export default {
 const Template = ({ porcentagem }) => {
   return html`
     <div>
-      <progress-bar style="--porcentagem: ${porcentagem}"></progress-bar>
+      <med-progress style="--porcentagem: ${porcentagem}"></med-progress>
     </div>
   `;
 };

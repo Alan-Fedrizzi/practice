@@ -1,18 +1,18 @@
 import { newSpecPage } from '@stencil/core/testing';
-import { ProgressBar } from '../progress-bar';
+import { MedProgress } from '../med-progress';
 
-describe('progress-bar', () => {
+describe('med-progress', () => {
   it('renders', async () => {
     const page = await newSpecPage({
-      components: [ProgressBar],
-      html: `<progress-bar></progress-bar>`,
+      components: [MedProgress],
+      html: `<med-progress></med-progress>`,
     });
     expect(page.root).toEqualHtml(`
-      <progress-bar>
+      <med-progress>
         <mock:shadow-root>
           <slot></slot>
         </mock:shadow-root>
-      </progress-bar>
+      </med-progress>
     `);
   });
 });

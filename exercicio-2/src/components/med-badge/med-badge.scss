@@ -1,4 +1,4 @@
-:host(.badge-test) {
+:host(.med-badge) {
   --color-brand-2: #0f7888;
   --color-brand-3: #14a2b8;
   --color-neutral-10: #f9fafa;
@@ -19,7 +19,7 @@
 }
 
 // default
-.badge-test__default {
+.med-badge__default {
   display: var(--display);
   box-sizing: var(--box-sizing);
   color: var(--color);
@@ -34,14 +34,14 @@
 }
 
 // sizes
-:host(.badge-test--sm) {
+:host(.med-badge--sm) {
   --font-size: 10px;
   --line-height: 12px;
   --padding: 6px 8px;
 }
 
 // name
-:host(.badge-test--stroke) {
+:host(.med-badge--stroke) {
   --background-color: transparent;
   --color: var(--color-brand-3);
   --border: 1px solid var(--color-brand-3);

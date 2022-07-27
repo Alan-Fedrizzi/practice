@@ -15,23 +15,23 @@ const Template = ({ size, disabled, expand, name, color }) => {
       }
     </style>
     <div>
-      <test-button size=${size} .disabled=${disabled} expand=${expand} name=${name} color=${color}>Clique</test-button>
+      <med-button size=${size} .disabled=${disabled} expand=${expand} name=${name} color=${color}>Clique</med-button>
 
-      <test-button size="${size}" .disabled="${disabled}" expand="${expand}" name="${name}" color=${color}>
+      <med-button size="${size}" .disabled="${disabled}" expand="${expand}" name="${name}" color=${color}>
         <svg name="start">
           <use xlink:href="symbol-defs.svg#icon-arrow-left"></use>
         </svg>
         Clique
-      </test-button>
+      </med-button>
 
-      <test-button size="${size}" .disabled="${disabled}" expand="${expand}" name="${name}" color=${color}>
+      <med-button size="${size}" .disabled="${disabled}" expand="${expand}" name="${name}" color=${color}>
         Clique
         <svg name="end">
           <use xlink:href="symbol-defs.svg#icon-arrow-right"></use>
         </svg>
-      </test-button>
+      </med-button>
 
-      <test-button size="${size}" .disabled="${disabled}" expand="${expand}" name="${name}" color=${color}>
+      <med-button size="${size}" .disabled="${disabled}" expand="${expand}" name="${name}" color=${color}>
         <svg name="start">
           <use xlink:href="symbol-defs.svg#icon-arrow-left"></use>
         </svg>
@@ -39,7 +39,7 @@ const Template = ({ size, disabled, expand, name, color }) => {
         <svg name="end">
           <use xlink:href="symbol-defs.svg#icon-arrow-right"></use>
         </svg>
-      </test-button>
+      </med-button>
     </div>
   `;
 };

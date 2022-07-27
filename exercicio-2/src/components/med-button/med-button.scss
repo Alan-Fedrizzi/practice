@@ -1,4 +1,4 @@
-:host(.test-button) {
+:host(.med-button) {
   --color-brand-2: #0f7888;
   --color-brand-3: #14a2b8;
   --color-neutral-3: #404d4f;
@@ -27,7 +27,7 @@
 }
 
 // default
-.test-button__tag {
+.med-button__tag {
   cursor: pointer;
   border: var(--border);
   border-radius: var(--border-radius);
@@ -64,118 +64,118 @@
 }
 
 // states
-:host(.test-button:hover) {
+:host(.med-button:hover) {
   --background-color: var(--background-color-hover);
 }
 
-:host(.test-button--disabled) {
+:host(.med-button--disabled) {
   --background-color: var(--background-color-disabled);
   --color: var(--color-disabled);
   pointer-events: none;
 }
 
-:host(.test-button--disabled) ::slotted(svg) {
+:host(.med-button--disabled) ::slotted(svg) {
   stroke: var(--color-disabled);
 }
 
 // sizes
-:host(.test-button--sm) {
+:host(.med-button--sm) {
   --padding: 12px 32px;
   --height: 40px;
 }
 
-:host(.test-button--xs) {
+:host(.med-button--xs) {
   --padding: 8px 24px;
   --height: 32px;
   --font-size: 14px;
   --line-height: 16px;
 }
 
-:host(.test-button--xs) ::slotted(svg) {
+:host(.med-button--xs) ::slotted(svg) {
   --height-icon: 16px;
   --width-icon: 16px;
 }
 
-:host(.test-button--xxs) {
+:host(.med-button--xxs) {
   --padding: 6px 16px;
   --height: 24px;
   --font-size: 12px;
   --line-height: 12px;
 }
 
-:host(.test-button--xxs) ::slotted(svg) {
+:host(.med-button--xxs) ::slotted(svg) {
   --height-icon: 16px;
   --width-icon: 16px;
 }
 
-:host(.test-button--xxs) ::slotted([name='start']) {
+:host(.med-button--xxs) ::slotted([name='start']) {
   margin-left: -4px;
 }
 
-:host(.test-button--xxs) ::slotted([name='end']) {
+:host(.med-button--xxs) ::slotted([name='end']) {
   margin-right: -4px;
 }
 
 // block
-:host(.test-button--block) {
+:host(.med-button--block) {
   --width: 100%;
   --display: block;
 }
 
 // secondary
-:host(.test-button--secondary) {
+:host(.med-button--secondary) {
   --background-color: transparent;
   --color: var(--color-brand-3);
   --border: 1px solid var(--color-brand-3);
 }
 
 // states
-:host(.test-button--secondary:hover) {
+:host(.med-button--secondary:hover) {
   --background-color: transparent;
   --border: 1px solid var(--color-brand-2);
 }
 
-:host(.test-button--secondary.test-button--disabled) {
+:host(.med-button--secondary.med-button--disabled) {
   --color: var(--color-neutral-5);
   --border: 1px solid var(--color-neutral-3);
   pointer-events: none;
 }
 
 // tertiary
-:host(.test-button--tertiary) {
+:host(.med-button--tertiary) {
   --border-radius: 0;
   --padding: 16px;
   --background-color: transparent;
 }
 
-:host(.test-button--tertiary) ::slotted([name='start']) {
+:host(.med-button--tertiary) ::slotted([name='start']) {
   margin-left: 0;
 }
 
-:host(.test-button--tertiary) ::slotted([name='end']) {
+:host(.med-button--tertiary) ::slotted([name='end']) {
   margin-right: 0;
 }
 
 // sizes
-:host(.test-button--tertiary.test-button--sm) {
+:host(.med-button--tertiary.med-button--sm) {
   --padding: 12px 16px;
 }
 
-:host(.test-button--tertiary.test-button--xs) {
+:host(.med-button--tertiary.med-button--xs) {
   --padding: 8px 12px;
 }
 
-:host(.test-button--tertiary.test-button--xxs) {
+:host(.med-button--tertiary.med-button--xxs) {
   --padding: 4px 12px;
 }
 
 // states
-:host(.test-button--tertiary:hover) {
+:host(.med-button--tertiary:hover) {
   --color: var(--color-brand-3);
   --background-color: transparent;
 }
 
-:host(.test-button--tertiary.test-button--disabled) {
+:host(.med-button--tertiary.med-button--disabled) {
   --color: var(--color-neutral-5);
   pointer-events: none;
 }

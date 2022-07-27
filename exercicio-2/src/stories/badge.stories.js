@@ -8,7 +8,7 @@ const Template = ({ size, name }) => {
   return html`
     <style></style>
     <div>
-      <badge-test size=${size} name=${name}>Badge</badge-test>
+      <med-badge size=${size} name=${name}>Badge</med-badge>
     </div>
   `;
 };
