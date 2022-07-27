@@ -17,6 +17,11 @@ export namespace Components {
         "name"?: string;
         "size"?: string;
     }
+    interface MedDownload {
+        "porcentagem"?: string;
+        "size"?: string;
+        "state"?: string;
+    }
     interface MedProgress {
         "porcentagem"?: string;
     }
@@ -34,6 +39,12 @@ declare global {
         prototype: HTMLMedButtonElement;
         new (): HTMLMedButtonElement;
     };
+    interface HTMLMedDownloadElement extends Components.MedDownload, HTMLStencilElement {
+    }
+    var HTMLMedDownloadElement: {
+        prototype: HTMLMedDownloadElement;
+        new (): HTMLMedDownloadElement;
+    };
     interface HTMLMedProgressElement extends Components.MedProgress, HTMLStencilElement {
     }
     var HTMLMedProgressElement: {
@@ -43,6 +54,7 @@ declare global {
     interface HTMLElementTagNameMap {
         "med-badge": HTMLMedBadgeElement;
         "med-button": HTMLMedButtonElement;
+        "med-download": HTMLMedDownloadElement;
         "med-progress": HTMLMedProgressElement;
     }
 }
@@ -58,12 +70,18 @@ declare namespace LocalJSX {
         "name"?: string;
         "size"?: string;
     }
+    interface MedDownload {
+        "porcentagem"?: string;
+        "size"?: string;
+        "state"?: string;
+    }
     interface MedProgress {
         "porcentagem"?: string;
     }
     interface IntrinsicElements {
         "med-badge": MedBadge;
         "med-button": MedButton;
+        "med-download": MedDownload;
         "med-progress": MedProgress;
     }
 }
@@ -73,6 +91,7 @@ declare module "@stencil/core" {
         interface IntrinsicElements {
             "med-badge": LocalJSX.MedBadge & JSXBase.HTMLAttributes<HTMLMedBadgeElement>;
             "med-button": LocalJSX.MedButton & JSXBase.HTMLAttributes<HTMLMedButtonElement>;
+            "med-download": LocalJSX.MedDownload & JSXBase.HTMLAttributes<HTMLMedDownloadElement>;
             "med-progress": LocalJSX.MedProgress & JSXBase.HTMLAttributes<HTMLMedProgressElement>;
         }
     }

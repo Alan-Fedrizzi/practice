@@ -1,0 +1,142 @@
+:host(.med-download) {
+  --color-brand-4: #47d5eb;
+  --color-neutral-1: #121616;
+  --color-neutral-2: #293132;
+  --color-neutral-3: #404d4f;
+  --color-neutral-10: #f9fafa;
+
+  --border: none;
+  --background-color-button: transparent;
+  --background-color-external: var(--color-brand-4);
+  --background-color-internal: var(--color-neutral-1);
+  --background-image: none;
+  --height: 160px;
+  --width: 160px;
+  --height-external: 140px;
+  --width-external: 140px;
+  --height-internal: 120px;
+  --width-internal: 120px;
+  --height-arrow: 70px;
+  --width-arrow: 70px;
+  --height-stop: 40px;
+  --width-stop: 40px;
+  --stroke: var(--color-brand-4);
+  --fill: var(--color-brand-4);
+  --border-radius: 50%;
+  --display: flex;
+  --justify-content: center;
+  --align-items: center;
+  --display-icon-arrow: block;
+  --display-icon-stop: none;
+  --transition: background-color, fill, stroke 0.2s;
+}
+
+// default
+.med-download {
+  &__button {
+    cursor: pointer;
+    border: var(--border);
+    background-color: var(--background-color-button);
+    height: var(--height);
+    width: var(--width);
+    display: var(--display);
+    justify-content: var(--justify-content);
+    align-items: var(--align-items);
+  }
+
+  &__external {
+    height: var(--height-external);
+    width: var(--width-external);
+    background-color: var(--background-color-external);
+    background-image: var(--background-image);
+    border-radius: var(--border-radius);
+    display: var(--display);
+    justify-content: var(--justify-content);
+    align-items: var(--align-items);
+    transition: var(--transition);
+  }
+
+  &__internal {
+    height: var(--height-internal);
+    width: var(--width-internal);
+    background-color: var(--background-color-internal);
+    border-radius: var(--border-radius);
+    position: relative;
+  }
+
+  &__icon {
+    stroke: var(--stroke);
+    fill: var(--fill);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: var(--transition);
+  }
+
+  &__icon--arrow {
+    height: var(--height-arrow);
+    width: var(--width-arrow);
+    display: var(--display-icon-arrow);
+  }
+
+  &__icon--stop {
+    height: var(--height-stop);
+    width: var(--width-stop);
+    display: var(--display-icon-stop);
+  }
+}
+
+// state hover
+:host(.med-download:hover) {
+  .med-download__external {
+    --background-color-external: var(--color-neutral-10);
+  }
+
+  .med-download__icon {
+    --stroke: var(--color-neutral-10);
+    --fill: var(--color-neutral-10);
+  }
+}
+
+// state active
+:host(.med-download--active) {
+  .med-download__external {
+    --background-color-external: transparent;
+    --background-image: conic-gradient(var(--color-brand-4) calc(var(--porcentagem) * 1%), var(--color-neutral-3) calc(var(--porcentagem) * 1%) 100%);
+  }
+
+  .med-download__icon--arrow {
+    --display-icon-arrow: none;
+  }
+
+  .med-download__icon--stop {
+    --display-icon-stop: block;
+  }
+}
+
+// state finished
+:host(.med-download--finished) {
+  .med-download__internal {
+    --background-color-internal: var(--color-brand-4);
+  }
+
+  .med-download__icon--arrow {
+    --stroke: var(--color-neutral-2);
+    --fill: var(--color-neutral-2);
+  }
+}
+
+// size
+:host(.med-download--large) {
+  --height: 240px;
+  --width: 240px;
+  --height-external: 200px;
+  --width-external: 200px;
+  --height-internal: 160px;
+  --width-internal: 160px;
+  --height-arrow: 100px;
+  --width-arrow: 100px;
+  --height-stop: 60px;
+  --width-stop: 60px;
+}
