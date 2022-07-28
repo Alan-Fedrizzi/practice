@@ -6,4 +6,3 @@
 - **[Exercise 4](https://practice-medgrupo.netlify.app/exercicio-4/)**
 - **[Exercise 5](https://practice-medgrupo.netlify.app/exercicio-5/)**
 - **[Exercise 6](https://practice-medgrupo.netlify.app/exercicio-6/)**
-- **[Exercise 7](https://exercicio-7.netlify.app/)**
