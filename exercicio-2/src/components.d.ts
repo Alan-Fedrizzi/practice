@@ -30,6 +30,9 @@ export namespace Components {
     interface MedProgress {
         "porcentagem"?: string;
     }
+    interface MedRange {
+        "porcentagem"?: string;
+    }
 }
 declare global {
     interface HTMLMedBadgeElement extends Components.MedBadge, HTMLStencilElement {
@@ -62,12 +65,19 @@ declare global {
         prototype: HTMLMedProgressElement;
         new (): HTMLMedProgressElement;
     };
+    interface HTMLMedRangeElement extends Components.MedRange, HTMLStencilElement {
+    }
+    var HTMLMedRangeElement: {
+        prototype: HTMLMedRangeElement;
+        new (): HTMLMedRangeElement;
+    };
     interface HTMLElementTagNameMap {
         "med-badge": HTMLMedBadgeElement;
         "med-button": HTMLMedButtonElement;
         "med-chart-radial": HTMLMedChartRadialElement;
         "med-download": HTMLMedDownloadElement;
         "med-progress": HTMLMedProgressElement;
+        "med-range": HTMLMedRangeElement;
     }
 }
 declare namespace LocalJSX {
@@ -95,12 +105,16 @@ declare namespace LocalJSX {
     interface MedProgress {
         "porcentagem"?: string;
     }
+    interface MedRange {
+        "porcentagem"?: string;
+    }
     interface IntrinsicElements {
         "med-badge": MedBadge;
         "med-button": MedButton;
         "med-chart-radial": MedChartRadial;
         "med-download": MedDownload;
         "med-progress": MedProgress;
+        "med-range": MedRange;
     }
 }
 export { LocalJSX as JSX };
@@ -112,6 +126,7 @@ declare module "@stencil/core" {
             "med-chart-radial": LocalJSX.MedChartRadial & JSXBase.HTMLAttributes<HTMLMedChartRadialElement>;
             "med-download": LocalJSX.MedDownload & JSXBase.HTMLAttributes<HTMLMedDownloadElement>;
             "med-progress": LocalJSX.MedProgress & JSXBase.HTMLAttributes<HTMLMedProgressElement>;
+            "med-range": LocalJSX.MedRange & JSXBase.HTMLAttributes<HTMLMedRangeElement>;
         }
     }
 }

@@ -1,0 +1,40 @@
+:host(.med-range) {
+  --color-brand-4: #47d5eb;
+  --color-neutral-7: #a5b3b6;
+
+  --height: 2px;
+  --width: 100%;
+  --background-image: linear-gradient(to right, var(--color-brand-4) calc(var(--porcentagem) * 1%), var(--color-neutral-7) calc(var(--porcentagem) * 1%) 100%);
+  --stroke: var(--color-brand-4);
+  --fill: var(--color-brand-4);
+  --height-icon: 12px;
+  --width-icon: 12px;
+  --position: relative;
+  --position-icon: absolute;
+  --top: 50%;
+  --left: calc(var(--porcentagem) * 1%);
+  --transform: translate(-50%, -50%);
+
+  display: block;
+}
+
+// default
+.med-range {
+  &__default {
+    height: var(--height);
+    width: var(--width);
+    background-image: var(--background-image);
+    position: var(--position);
+  }
+
+  &__icon {
+    stroke: var(--stroke);
+    fill: var(--fill);
+    height: var(--height-icon);
+    width: var(--width-icon);
+    position: var(--position-icon);
+    top: var(--top);
+    left: var(--left);
+    transform: var(--transform);
+  }
+}
