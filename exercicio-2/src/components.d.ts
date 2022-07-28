@@ -17,6 +17,11 @@ export namespace Components {
         "name"?: string;
         "size"?: string;
     }
+    interface MedChartRadial {
+        "size"?: string;
+        "success"?: string;
+        "warning"?: string;
+    }
     interface MedDownload {
         "porcentagem"?: string;
         "size"?: string;
@@ -39,6 +44,12 @@ declare global {
         prototype: HTMLMedButtonElement;
         new (): HTMLMedButtonElement;
     };
+    interface HTMLMedChartRadialElement extends Components.MedChartRadial, HTMLStencilElement {
+    }
+    var HTMLMedChartRadialElement: {
+        prototype: HTMLMedChartRadialElement;
+        new (): HTMLMedChartRadialElement;
+    };
     interface HTMLMedDownloadElement extends Components.MedDownload, HTMLStencilElement {
     }
     var HTMLMedDownloadElement: {
@@ -54,6 +65,7 @@ declare global {
     interface HTMLElementTagNameMap {
         "med-badge": HTMLMedBadgeElement;
         "med-button": HTMLMedButtonElement;
+        "med-chart-radial": HTMLMedChartRadialElement;
         "med-download": HTMLMedDownloadElement;
         "med-progress": HTMLMedProgressElement;
     }
@@ -70,6 +82,11 @@ declare namespace LocalJSX {
         "name"?: string;
         "size"?: string;
     }
+    interface MedChartRadial {
+        "size"?: string;
+        "success"?: string;
+        "warning"?: string;
+    }
     interface MedDownload {
         "porcentagem"?: string;
         "size"?: string;
@@ -81,6 +98,7 @@ declare namespace LocalJSX {
     interface IntrinsicElements {
         "med-badge": MedBadge;
         "med-button": MedButton;
+        "med-chart-radial": MedChartRadial;
         "med-download": MedDownload;
         "med-progress": MedProgress;
     }
@@ -91,6 +109,7 @@ declare module "@stencil/core" {
         interface IntrinsicElements {
             "med-badge": LocalJSX.MedBadge & JSXBase.HTMLAttributes<HTMLMedBadgeElement>;
             "med-button": LocalJSX.MedButton & JSXBase.HTMLAttributes<HTMLMedButtonElement>;
+            "med-chart-radial": LocalJSX.MedChartRadial & JSXBase.HTMLAttributes<HTMLMedChartRadialElement>;
             "med-download": LocalJSX.MedDownload & JSXBase.HTMLAttributes<HTMLMedDownloadElement>;
             "med-progress": LocalJSX.MedProgress & JSXBase.HTMLAttributes<HTMLMedProgressElement>;
         }

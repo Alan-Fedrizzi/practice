@@ -1,0 +1,114 @@
+:host(.med-chart-radial) {
+  --color-neutral-1: #121616;
+  --color-neutral-2: #293132;
+  --color-neutral-7: #a5b3b6;
+  --color-neutral-10: #f9fafa;
+  --color-feddback-success: #5eed71;
+  --color-feddback-warning: #ed685e;
+
+  // external
+  --font-family: sans-serif;
+  --height: 108px;
+  --width: 108px;
+  --border-radius: 50%;
+  --background-image: conic-gradient(
+    var(--color-feddback-success) calc(var(--success) * 1%),
+    var(--color-feddback-warning) calc(var(--success) * 1%) calc(var(--warning) * 1%),
+    var(--color-neutral-2) calc(var(--success) * 1%) 100%
+  );
+  --display: flex;
+  --justify-content: center;
+  --align-items: center;
+
+  // internal
+  --height-internal: 92px;
+  --width-internal: 92px;
+  --background-color-internal: var(--color-neutral-1);
+  --flex-direction: column;
+
+  // number
+  --font-size-number: 24px;
+  --font-weight-number: 600;
+  --line-height-number: 24px;
+  --color-number: var(--color-neutral-10);
+
+  // text
+  --font-size-text: 12px;
+  --font-weight-text: 400;
+  --line-height-text: 12px;
+  --color-text: var(--color-neutral-7);
+  --display-text: inline-block;
+
+  display: block;
+}
+
+// default
+.med-chart-radial {
+  &__external {
+    font-family: var(--font-family);
+    height: var(--height);
+    width: var(--width);
+    border-radius: var(--border-radius);
+    background-image: var(--background-image);
+    display: var(--display);
+    justify-content: var(--justify-content);
+    align-items: var(--align-items);
+  }
+
+  &__internal {
+    height: var(--height-internal);
+    width: var(--width-internal);
+    border-radius: var(--border-radius);
+    background-color: var(--background-color-internal);
+    display: var(--display);
+    justify-content: var(--justify-content);
+    align-items: var(--align-items);
+    flex-direction: var(--flex-direction);
+  }
+
+  &__number {
+    font-size: var(--font-size-number);
+    font-weight: var(--font-weight-number);
+    line-height: var(--line-height-number);
+    color: var(--color-number);
+  }
+
+  &__text {
+    font-size: var(--font-size-text);
+    font-weight: var(--font-weight-text);
+    line-height: var(--line-height-text);
+    color: var(--color-text);
+    display: var(--display-text);
+  }
+}
+
+// size
+:host(.med-chart-radial--md) {
+  --height: 80px;
+  --width: 80px;
+  --height-internal: 72px;
+  --width-internal: 72px;
+  --font-size-number: 20px;
+  --line-height-number: 20px;
+  --font-size-text: 10px;
+}
+
+:host(.med-chart-radial--sm) {
+  --height: 56px;
+  --width: 56px;
+  --height-internal: 52px;
+  --width-internal: 52px;
+  --font-size-number: 16px;
+  --line-height-number: 16px;
+  --display-text: none;
+}
+
+:host(.med-chart-radial--xs) {
+  --height: 48px;
+  --width: 48px;
+  --height-internal: 44px;
+  --width-internal: 44px;
+  --font-size-number: 14px;
+  --line-height-number: 16px;
+  --display-text: none;
+}
