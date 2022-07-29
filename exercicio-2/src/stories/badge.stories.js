@@ -28,7 +28,7 @@ Default.argTypes = {
     },
   },
   color: {
-    options: [undefined, 'brand', 'aula'],
+    options: [undefined, 'brand', 'aula', 'material', 'questoes', 'revalida', 'provas'],
     control: {
       type: 'select',
     },

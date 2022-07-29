@@ -9,6 +9,26 @@
   --med-color-aula-3: #14b897;
   --med-color-aula-4: #47ebca;
   --med-color-aula-5: #a3f5e4;
+  --med-color-material-1: #5c2b0a;
+  --med-color-material-2: #883f0f;
+  --med-color-material-3: #b85614;
+  --med-color-material-4: #eb8947;
+  --med-color-material-5: #f5c4a3;
+  --med-color-questoes-1: #0a415c;
+  --med-color-questoes-2: #0f6088;
+  --med-color-questoes-3: #1482b8;
+  --med-color-questoes-4: #47b4eb;
+  --med-color-questoes-5: #a3daf5;
+  --med-color-revalida-1: #5c0a23;
+  --med-color-revalida-2: #880f33;
+  --med-color-revalida-3: #b81446;
+  --med-color-revalida-4: #eb4778;
+  --med-color-revalida-5: #f5a3bc;
+  --med-color-provas-1: #300a5c;
+  --med-color-provas-2: #480f88;
+  --med-color-provas-3: #6114b8;
+  --med-color-provas-4: #9447eb;
+  --med-color-provas-5: #c9a3f5;
 }
 
 .med-color-brand {
@@ -25,6 +45,38 @@
   --med-color-3: var(--med-color-aula-3);
   --med-color-4: var(--med-color-aula-4);
   --med-color-5: var(--med-color-aula-5);
+}
+
+.med-color-material {
+  --med-color-1: var(--med-color-material-1);
+  --med-color-2: var(--med-color-material-2);
+  --med-color-3: var(--med-color-material-3);
+  --med-color-4: var(--med-color-material-4);
+  --med-color-5: var(--med-color-material-5);
+}
+
+.med-color-questoes {
+  --med-color-1: var(--med-color-questoes-1);
+  --med-color-2: var(--med-color-questoes-2);
+  --med-color-3: var(--med-color-questoes-3);
+  --med-color-4: var(--med-color-questoes-4);
+  --med-color-5: var(--med-color-questoes-5);
+}
+
+.med-color-revalida {
+  --med-color-1: var(--med-color-revalida-1);
+  --med-color-2: var(--med-color-revalida-2);
+  --med-color-3: var(--med-color-revalida-3);
+  --med-color-4: var(--med-color-revalida-4);
+  --med-color-5: var(--med-color-revalida-5);
+}
+
+.med-color-provas {
+  --med-color-1: var(--med-color-provas-1);
+  --med-color-2: var(--med-color-provas-2);
+  --med-color-3: var(--med-color-provas-3);
+  --med-color-4: var(--med-color-provas-4);
+  --med-color-5: var(--med-color-provas-5);
 }
 
 /*# sourceMappingURL=colors.css.map */

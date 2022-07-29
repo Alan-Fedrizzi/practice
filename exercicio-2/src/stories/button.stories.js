@@ -70,7 +70,7 @@ Default.argTypes = {
     },
   },
   color: {
-    options: [undefined, 'brand'],
+    options: [undefined, 'brand', 'aula', 'material', 'questoes', 'revalida', 'provas'],
     control: {
       type: 'select',
     },

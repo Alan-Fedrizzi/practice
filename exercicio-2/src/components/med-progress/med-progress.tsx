@@ -8,11 +8,12 @@ import { generateMedColor } from '../../utils/utils';
 })
 export class MedProgress {
   @Prop() porcentagem?: string;
+  @Prop() color?: string;
 
   render() {
     return (
       <Host
-        class={generateMedColor(null, {
+        class={generateMedColor(this.color, {
           'med-progress': true,
         })}
       >

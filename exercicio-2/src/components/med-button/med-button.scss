@@ -1,12 +1,10 @@
 :host(.med-button) {
-  --color-brand-2: #0f7888;
-  --color-brand-3: #14a2b8;
   --color-neutral-3: #404d4f;
   --color-neutral-5: #6e8386;
   --color-neutral-10: #f9fafa;
 
-  --background-color: var(--color-brand-3);
-  --background-color-hover: var(--color-brand-2);
+  --background-color: var(--med-color-brand-3);
+  --background-color-hover: var(--med-color-brand-2);
   --background-color-disabled: var(--color-neutral-3);
   --color: var(--color-neutral-10);
   --color-disabled: var(--color-neutral-5);
@@ -125,14 +123,14 @@
 // secondary
 :host(.med-button--secondary) {
   --background-color: transparent;
-  --color: var(--color-brand-3);
-  --border: 1px solid var(--color-brand-3);
+  --color: var(--med-color-brand-3);
+  --border: 1px solid var(--med-color-brand-3);
 }
 
 // states
 :host(.med-button--secondary:hover) {
   --background-color: transparent;
-  --border: 1px solid var(--color-brand-2);
+  --border: 1px solid var(--med-color-brand-2);
 }
 
 :host(.med-button--secondary.med-button--disabled) {
@@ -171,11 +169,33 @@
 
 // states
 :host(.med-button--tertiary:hover) {
-  --color: var(--color-brand-3);
+  --color: var(--med-color-brand-3);
   --background-color: transparent;
 }
 
 :host(.med-button--tertiary.med-button--disabled) {
   --color: var(--color-neutral-5);
   pointer-events: none;
+}
+
+// colors
+:host(.med-color.med-button--primary) {
+  --background-color: var(--med-color-3);
+}
+
+:host(.med-color.med-button--primary:hover) {
+  --background-color: var(--med-color-2);
+}
+
+:host(.med-color.med-button--secondary) {
+  --color: var(--med-color-3);
+  --border: 1px solid var(--med-color-3);
+}
+
+:host(.med-color.med-button--secondary:hover) {
+  --border: 1px solid var(--med-color-2);
+}
+
+:host(.med-color.med-button--tertiary:hover) {
+  --color: var(--med-color-3);
 }

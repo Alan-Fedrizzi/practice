@@ -9,6 +9,7 @@
 
 | Property      | Attribute     | Description | Type     | Default     |
 | ------------- | ------------- | ----------- | -------- | ----------- |
+| `color`       | `color`       |             | `string` | `undefined` |
 | `porcentagem` | `porcentagem` |             | `string` | `undefined` |
 | `size`        | `size`        |             | `string` | `undefined` |
 | `state`       | `state`       |             | `string` | `undefined` |

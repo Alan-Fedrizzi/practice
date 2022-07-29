@@ -24,14 +24,17 @@ export namespace Components {
         "warning"?: string;
     }
     interface MedDownload {
+        "color"?: string;
         "porcentagem"?: string;
         "size"?: string;
         "state"?: string;
     }
     interface MedProgress {
+        "color"?: string;
         "porcentagem"?: string;
     }
     interface MedRange {
+        "color"?: string;
         "porcentagem"?: string;
     }
 }
@@ -100,14 +103,17 @@ declare namespace LocalJSX {
         "warning"?: string;
     }
     interface MedDownload {
+        "color"?: string;
         "porcentagem"?: string;
         "size"?: string;
         "state"?: string;
     }
     interface MedProgress {
+        "color"?: string;
         "porcentagem"?: string;
     }
     interface MedRange {
+        "color"?: string;
         "porcentagem"?: string;
     }
     interface IntrinsicElements {

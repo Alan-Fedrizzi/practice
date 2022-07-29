@@ -1,12 +1,10 @@
 :host(.med-badge) {
-  --color-brand-2: #0f7888;
-  --color-brand-3: #14a2b8;
   --color-neutral-10: #f9fafa;
 
   --display: inline-block;
   --box-sizing: border-box;
   --color: var(--color-neutral-10);
-  --background-color: var(--color-brand-2);
+  --background-color: var(--med-color-brand-2);
   --font-family: sans-serif;
   --font-size: 14px;
   --font-weight: 600;
@@ -43,10 +41,16 @@
 // name
 :host(.med-badge--stroke) {
   --background-color: transparent;
-  --color: var(--color-brand-3);
-  --border: 1px solid var(--color-brand-3);
+  --color: var(--med-color-brand-3);
+  --border: 1px solid var(--med-color-brand-3);
 }
 
-:host(.med-color) {
-  --background-color: var(--med-color-5);
+// colors
+:host(.med-color.med-badge--fill) {
+  --background-color: var(--med-color-2);
+}
+
+:host(.med-color.med-badge--stroke) {
+  --color: var(--med-color-3);
+  --border: 1px solid var(--med-color-3);
 }

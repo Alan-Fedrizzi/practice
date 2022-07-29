@@ -10,11 +10,12 @@ export class MedDownload {
   @Prop() state?: string;
   @Prop() size?: string;
   @Prop() porcentagem?: string;
+  @Prop() color?: string;
 
   render() {
     return (
       <Host
-        class={generateMedColor(null, {
+        class={generateMedColor(this.color, {
           'med-download': true,
           [`med-download--${this.state}`]: this.state !== undefined,
           [`med-download--${this.size}`]: this.size !== undefined,

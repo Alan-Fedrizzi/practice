@@ -1,11 +1,9 @@
 :host(.med-progress) {
-  --color-brand-1: #0a515c;
-  --color-brand-4: #47d5eb;
   --porcentagem: 0;
 
   --height: 4px;
   --width: 100%;
-  --background-image: linear-gradient(to right, var(--color-brand-4) calc(var(--porcentagem) * 1%), var(--color-brand-1) calc(var(--porcentagem) * 1%) 100%);
+  --background-image: linear-gradient(to right, var(--med-color-brand-4) calc(var(--porcentagem) * 1%), var(--med-color-brand-1) calc(var(--porcentagem) * 1%) 100%);
 
   display: block;
 }
@@ -15,4 +13,9 @@
   height: var(--height);
   width: var(--width);
   background-image: var(--background-image);
+}
+
+// colors
+:host(.med-color) {
+  --background-image: linear-gradient(to right, var(--med-color-4) calc(var(--porcentagem) * 1%), var(--med-color-1) calc(var(--porcentagem) * 1%) 100%);
 }
