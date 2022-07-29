@@ -1,5 +1,30 @@
-body {
-  background-color: #121616;
+:root {
+  --med-color-brand-1: #0a515c;
+  --med-color-brand-2: #0f7888;
+  --med-color-brand-3: #14a2b8;
+  --med-color-brand-4: #47d5eb;
+  --med-color-brand-5: #a3eaf5;
+  --med-color-aula-1: #0a5c4b;
+  --med-color-aula-2: #0f8870;
+  --med-color-aula-3: #14b897;
+  --med-color-aula-4: #47ebca;
+  --med-color-aula-5: #a3f5e4;
+}
+
+.med-color-brand {
+  --med-color-1: var(--med-color-brand-1);
+  --med-color-2: var(--med-color-brand-2);
+  --med-color-3: var(--med-color-brand-3);
+  --med-color-4: var(--med-color-brand-4);
+  --med-color-5: var(--med-color-brand-5);
+}
+
+.med-color-aula {
+  --med-color-1: var(--med-color-aula-1);
+  --med-color-2: var(--med-color-aula-2);
+  --med-color-3: var(--med-color-aula-3);
+  --med-color-4: var(--med-color-aula-4);
+  --med-color-5: var(--med-color-aula-5);
 }
 
 /*# sourceMappingURL=colors.css.map */

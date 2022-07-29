@@ -4,11 +4,11 @@ export default {
   title: 'Components/Badge',
 };
 
-const Template = ({ size, name }) => {
+const Template = ({ size, name, color }) => {
   return html`
     <style></style>
     <div>
-      <med-badge size=${size} name=${name}>Badge</med-badge>
+      <med-badge size=${size} name=${name} color=${color}>Badge</med-badge>
     </div>
   `;
 };
@@ -23,6 +23,12 @@ Default.argTypes = {
   },
   name: {
     options: [undefined, 'fill', 'stroke'],
+    control: {
+      type: 'select',
+    },
+  },
+  color: {
+    options: [undefined, 'brand', 'aula'],
     control: {
       type: 'select',
     },

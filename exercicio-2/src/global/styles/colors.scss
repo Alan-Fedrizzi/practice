@@ -1,3 +1,9 @@
-body {
-  background-color: #121616;
+@import './variables';
+@import './functions';
+@import './mixins';
+
+:root {
+  @include generate-color-tokens();
 }
+
+@include generate-color-classes();

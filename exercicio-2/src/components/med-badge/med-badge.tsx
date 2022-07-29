@@ -9,11 +9,12 @@ import { generateMedColor } from '../../utils/utils';
 export class MedBadge {
   @Prop() size?: string;
   @Prop() name?: string;
+  @Prop() color?: string;
 
   render() {
     return (
       <Host
-        class={generateMedColor(null, {
+        class={generateMedColor(this.color, {
           'med-badge': true,
           [`med-badge--${this.size}`]: this.size !== undefined,
           [`med-badge--${this.name}`]: this.name !== undefined,
