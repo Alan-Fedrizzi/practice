@@ -1,0 +1,34 @@
+:root {
+  --color-neutral-1: #121616;
+  --color-neutral-2: #293132;
+  --color-neutral-3: #404d4f;
+  --color-neutral-7: #a5b3b6;
+  --color-neutral-10: #f9fafa;
+  --color-brand-4: #47d5eb;
+  --color-feedback-success: #5eed71;
+  --color-feedback-warning: #ed685e;
+}
+
+$breakpoints-sm: 620px;
+$breakpoints-md: 720px;
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; // 1rem=10px
+}
+
+body {
+  font-family: sans-serif;
+  font-weight: 400;
+  line-height: 1;
+  background-color: var(--color-neutral-1);
+  color: var(--color-neutral-10);
+}

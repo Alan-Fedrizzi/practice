@@ -1,0 +1,11 @@
+<svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+<symbol id="icon-trofeu" viewBox="0 0 32 32">
+<path fill="none" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.6667" d="M10.667 29.333h10.667"></path>
+<path fill="none" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.6667" d="M16 22.667v6.667"></path>
+<path fill="none" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="2.6667" d="M16 22.667c2.945 0 5.333-2.508 5.333-5.602v-13.065h-10.667v13.065c0 3.094 2.388 5.602 5.333 5.602z"></path>
+<path fill="none" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="2.6667" d="M10.667 8h-6.667v4.41c0 2.719 2.089 4.923 4.667 4.923 0.716 0 1.394-0.17 2-0.474"></path>
+<path fill="none" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="2.6667" d="M21.333 8h6.667v4.41c0 2.719-2.089 4.923-4.667 4.923-0.716 0-1.394-0.17-2-0.474"></path>
+</symbol>
+</defs>
+</svg>

@@ -1,0 +1,60 @@
+.chart {
+  height: 6.4rem;
+  width: 6.4rem;
+  border-radius: 50%;
+  background-image: conic-gradient(
+    var(--color-feedback-success) calc(var(--acertos) * 1%),
+    var(--color-feedback-warning) calc(var(--acertos) * 1%)
+      calc(var(--erros) * 1%),
+    var(--color-neutral-3) calc(var(--erros) * 1%) 100%
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media only screen and (max-width: $breakpoints-md) {
+    height: 8rem;
+    width: 8rem;
+  }
+
+  &__internal {
+    height: 5.6rem;
+    width: 5.6rem;
+    border-radius: 50%;
+    background-color: var(--color-neutral-2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @media only screen and (max-width: $breakpoints-md) {
+      height: 7rem;
+      width: 7rem;
+    }
+  }
+
+  &__text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.4rem;
+
+    @media only screen and (max-width: $breakpoints-md) {
+      gap: 0.6rem;
+    }
+  }
+
+  &__number {
+    font-size: 1.6rem;
+    font-weight: 600;
+
+    @media only screen and (max-width: $breakpoints-md) {
+      font-size: 2rem;
+    }
+  }
+
+  &__text {
+    font-size: 1rem;
+    line-height: 1.2rem;
+    color: var(--color-neutral-7);
+  }
+}

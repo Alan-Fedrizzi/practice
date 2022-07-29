@@ -1,0 +1,132 @@
+.modo {
+  background-color: var(--color-neutral-2);
+  padding: 1.6rem 2.4rem;
+  border-radius: 8px;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-template-rows: auto auto;
+
+  @media only screen and (max-width: $breakpoints-md) {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    gap: 2.4rem;
+    padding: 0;
+  }
+
+  &__informacao {
+    align-self: end;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+
+    @media only screen and (max-width: $breakpoints-md) {
+      border-top: 1px solid var(--color-neutral-3);
+      padding: 1.2rem 2.4rem;
+      margin-top: -1px;
+    }
+  }
+
+  &__informacao--gabarito {
+    @media only screen and (max-width: $breakpoints-md) {
+      padding: 1.6rem 0;
+      justify-content: center;
+    }
+  }
+
+  &__icon {
+    height: 2.4rem;
+    width: 2.4rem;
+    stroke: var(--color-neutral-10);
+  }
+
+  &__posicao {
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1.6rem;
+
+    @media only screen and (max-width: $breakpoints-md) {
+      margin-right: auto;
+    }
+  }
+
+  &__paragrafo {
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+    color: var(--color-brand-4);
+  }
+
+  &__paragrafo--gabarito {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+
+    @media only screen and (max-width: $breakpoints-md) {
+      font-size: 1.4rem;
+      line-height: 1.6rem;
+    }
+  }
+
+  &__container {
+    grid-row: 1 / -1;
+    grid-column: 2 / -1;
+    display: flex;
+    gap: 2.4rem;
+
+    @media only screen and (max-width: $breakpoints-md) {
+      grid-row: 2 / 3;
+      grid-column: 1 / -1;
+      padding: 0 2.4rem;
+    }
+  }
+
+  &__resultado {
+    display: flex;
+    gap: 2.4rem;
+    align-items: center;
+
+    @media only screen and (max-width: $breakpoints-md) {
+      flex-direction: column;
+      gap: 1.2rem;
+      align-items: start;
+    }
+  }
+
+  &__score {
+    display: flex;
+    gap: 0.4rem;
+    align-items: center;
+  }
+
+  &__box {
+    height: 0.8rem;
+    width: 0.8rem;
+    border-radius: 2px;
+    background-color: var(--color-neutral-3);
+    margin-right: 0.4rem;
+  }
+
+  &__box--acertos {
+    background-color: var(--color-feedback-success);
+  }
+
+  &__box--erros {
+    background-color: var(--color-feedback-warning);
+  }
+
+  &__number {
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1.6rem;
+  }
+
+  &__span {
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+    color: var(--color-neutral-7);
+  }
+
+  &__chart {
+    @media only screen and (max-width: $breakpoints-md) {
+      order: -1;
+    }
+  }
+}
