@@ -1,9 +1,7 @@
 :host(.med-badge) {
-  --color-neutral-10: #f9fafa;
-
   --display: inline-block;
   --box-sizing: border-box;
-  --color: var(--color-neutral-10);
+  --color: var(--med-color-neutral-10);
   --background-color: var(--med-color-brand-2);
   --font-family: sans-serif;
   --font-size: 14px;
@@ -38,19 +36,43 @@
   --padding: 6px 8px;
 }
 
-// name
-:host(.med-badge--stroke) {
+// fill
+:host(.med-badge--outline) {
   --background-color: transparent;
   --color: var(--med-color-brand-3);
   --border: 1px solid var(--med-color-brand-3);
 }
 
 // colors
-:host(.med-color.med-badge--fill) {
+:host(.med-color) {
   --background-color: var(--med-color-2);
+  --color: var(--med-color-neutral-10);
 }
 
-:host(.med-color.med-badge--stroke) {
+:host(.med-color.med-badge--outline) {
   --color: var(--med-color-3);
   --border: 1px solid var(--med-color-3);
+  --background-color: transparent;
+}
+
+:host(.med-color-neutral) {
+  --background-color: var(--med-color-neutral);
+  --color: var(--med-color-neutral-contrast);
+}
+
+:host(.med-color-neutral.med-badge--outline) {
+  --color: var(--med-color-neutral);
+  --border: 1px solid var(--med-color-neutral);
+  --background-color: transparent;
+}
+
+:host(.med-color-feedback) {
+  --background-color: var(--med-color-feedback);
+  --color: var(--med-color-neutral-1);
+}
+
+:host(.med-color-feedback.med-badge--outline) {
+  --color: var(--med-color-feedback);
+  --border: 1px solid var(--med-color-feedback);
+  --background-color: transparent;
 }

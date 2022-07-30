@@ -1,4 +1,23 @@
 :root {
+  --med-color-neutral-1: #121616;
+  --med-color-neutral-15: #1e2424;
+  --med-color-neutral-2: #293132;
+  --med-color-neutral-25: #353f40;
+  --med-color-neutral-3: #404d4f;
+  --med-color-neutral-35: #4b5b5d;
+  --med-color-neutral-4: #57686b;
+  --med-color-neutral-45: #627679;
+  --med-color-neutral-5: #6e8386;
+  --med-color-neutral-55: #7b9093;
+  --med-color-neutral-6: #899c9f;
+  --med-color-neutral-65: #97a8aa;
+  --med-color-neutral-7: #a5b3b6;
+  --med-color-neutral-75: #b3bfc1;
+  --med-color-neutral-8: #c1cbcd;
+  --med-color-neutral-85: #cfd7d8;
+  --med-color-neutral-9: #dde3e3;
+  --med-color-neutral-95: #ebefef;
+  --med-color-neutral-10: #f9fafa;
   --med-color-brand-1: #0a515c;
   --med-color-brand-2: #0f7888;
   --med-color-brand-3: #14a2b8;
@@ -29,6 +48,10 @@
   --med-color-provas-3: #6114b8;
   --med-color-provas-4: #9447eb;
   --med-color-provas-5: #c9a3f5;
+  --med-color-feedback-attention: #edc75e;
+  --med-color-feedback-caution: #ed975e;
+  --med-color-feedback-warning: #ed685e;
+  --med-color-feedback-success: #5eed71;
 }
 
 .med-color-brand {
@@ -77,6 +100,117 @@
   --med-color-3: var(--med-color-provas-3);
   --med-color-4: var(--med-color-provas-4);
   --med-color-5: var(--med-color-provas-5);
+}
+
+.med-color-neutral-1 {
+  --med-color-neutral: var(--med-color-neutral-1);
+  --med-color-neutral-contrast: var(--med-color-neutral-10);
+}
+
+.med-color-neutral-15 {
+  --med-color-neutral: var(--med-color-neutral-15);
+  --med-color-neutral-contrast: var(--med-color-neutral-10);
+}
+
+.med-color-neutral-2 {
+  --med-color-neutral: var(--med-color-neutral-2);
+  --med-color-neutral-contrast: var(--med-color-neutral-10);
+}
+
+.med-color-neutral-25 {
+  --med-color-neutral: var(--med-color-neutral-25);
+  --med-color-neutral-contrast: var(--med-color-neutral-10);
+}
+
+.med-color-neutral-3 {
+  --med-color-neutral: var(--med-color-neutral-3);
+  --med-color-neutral-contrast: var(--med-color-neutral-10);
+}
+
+.med-color-neutral-35 {
+  --med-color-neutral: var(--med-color-neutral-35);
+  --med-color-neutral-contrast: var(--med-color-neutral-10);
+}
+
+.med-color-neutral-4 {
+  --med-color-neutral: var(--med-color-neutral-4);
+  --med-color-neutral-contrast: var(--med-color-neutral-10);
+}
+
+.med-color-neutral-45 {
+  --med-color-neutral: var(--med-color-neutral-45);
+  --med-color-neutral-contrast: var(--med-color-neutral-10);
+}
+
+.med-color-neutral-5 {
+  --med-color-neutral: var(--med-color-neutral-5);
+  --med-color-neutral-contrast: var(--med-color-neutral-10);
+}
+
+.med-color-neutral-55 {
+  --med-color-neutral: var(--med-color-neutral-55);
+  --med-color-neutral-contrast: var(--med-color-neutral-10);
+}
+
+.med-color-neutral-6 {
+  --med-color-neutral: var(--med-color-neutral-6);
+  --med-color-neutral-contrast: var(--med-color-neutral-1);
+}
+
+.med-color-neutral-65 {
+  --med-color-neutral: var(--med-color-neutral-65);
+  --med-color-neutral-contrast: var(--med-color-neutral-1);
+}
+
+.med-color-neutral-7 {
+  --med-color-neutral: var(--med-color-neutral-7);
+  --med-color-neutral-contrast: var(--med-color-neutral-1);
+}
+
+.med-color-neutral-75 {
+  --med-color-neutral: var(--med-color-neutral-75);
+  --med-color-neutral-contrast: var(--med-color-neutral-1);
+}
+
+.med-color-neutral-8 {
+  --med-color-neutral: var(--med-color-neutral-8);
+  --med-color-neutral-contrast: var(--med-color-neutral-1);
+}
+
+.med-color-neutral-85 {
+  --med-color-neutral: var(--med-color-neutral-85);
+  --med-color-neutral-contrast: var(--med-color-neutral-1);
+}
+
+.med-color-neutral-9 {
+  --med-color-neutral: var(--med-color-neutral-9);
+  --med-color-neutral-contrast: var(--med-color-neutral-1);
+}
+
+.med-color-neutral-95 {
+  --med-color-neutral: var(--med-color-neutral-95);
+  --med-color-neutral-contrast: var(--med-color-neutral-1);
+}
+
+.med-color-neutral-10 {
+  --med-color-neutral: var(--med-color-neutral-10);
+  --med-color-neutral-contrast: var(--med-color-neutral-1);
+}
+
+.med-color-fb-attention {
+  --med-color-feedback: #edc75e;
+}
+
+.med-color-fb-caution {
+  --med-color-feedback: #ed975e;
+}
+
+.med-color-fb-warning {
+  --med-color-feedback: #ed685e;
+}
+
+.med-color-fb-success {
+  --med-color-feedback: #5eed71;
 }
 
 /*# sourceMappingURL=colors.css.map */

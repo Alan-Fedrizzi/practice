@@ -3,7 +3,11 @@
 @import './mixins';
 
 :root {
+  @include generate-color-neutral();
   @include generate-color-tokens();
+  @include generate-color-feedback();
 }
 
 @include generate-color-classes();
+@include generate-color-neutral-classes();
+@include generate-color-feedback-classes();

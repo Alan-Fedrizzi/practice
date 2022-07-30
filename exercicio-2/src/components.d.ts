@@ -8,7 +8,7 @@ import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 export namespace Components {
     interface MedBadge {
         "color"?: string;
-        "name"?: string;
+        "fill"?: string;
         "size"?: string;
     }
     interface MedButton {
@@ -87,7 +87,7 @@ declare global {
 declare namespace LocalJSX {
     interface MedBadge {
         "color"?: string;
-        "name"?: string;
+        "fill"?: string;
         "size"?: string;
     }
     interface MedButton {

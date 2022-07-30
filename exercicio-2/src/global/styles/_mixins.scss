@@ -25,3 +25,38 @@
     }
   }
 }
+
+@mixin generate-color-neutral() {
+  @each $key, $value in $color-neutral {
+    --med-color-neutral-#{$key}: #{map-get($color-neutral, $key)};
+  }
+}
+
+@mixin generate-color-neutral-classes() {
+  $index: 1;
+  @each $key, $value in $color-neutral {
+    .med-color-neutral-#{$key} {
+      --med-color-neutral: var(--med-color-neutral-#{$key});
+      @if ($index < 11) {
+        --med-color-neutral-contrast: var(--med-color-neutral-10);
+      } @else {
+        --med-color-neutral-contrast: var(--med-color-neutral-1);
+      }
+    }
+    $index: $index + 1;
+  }
+}
+
+@mixin generate-color-feedback() {
+  @each $key, $value in $color-feedback {
+    --med-color-feedback-#{$key}: #{map-get($color-feedback, $key)};
+  }
+}
+
+@mixin generate-color-feedback-classes() {
+  @each $key, $value in $color-feedback {
+    .med-color-fb-#{$key} {
+      --med-color-feedback: #{map-get($color-feedback, $key)};
+    }
+  }
+}
