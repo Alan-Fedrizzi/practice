@@ -44,3 +44,15 @@
   --stroke: var(--med-color-4);
   --fill: var(--med-color-4);
 }
+
+:host(.med-color-neutral) {
+  --background-image: linear-gradient(to right, var(--med-color-neutral) calc(var(--porcentagem) * 1%), var(--med-color-neutral-contrast) calc(var(--porcentagem) * 1%) 100%);
+  --stroke: var(--med-color-neutral);
+  --fill: var(--med-color-neutral);
+}
+
+:host(.med-color-feedback) {
+  --background-image: linear-gradient(to right, var(--med-color-feedback) calc(var(--porcentagem) * 1%), var(--med-color-neutral-1) calc(var(--porcentagem) * 1%) 100%);
+  --stroke: var(--med-color-feedback);
+  --fill: var(--med-color-feedback);
+}
