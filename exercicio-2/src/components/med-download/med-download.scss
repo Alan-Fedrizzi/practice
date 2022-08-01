@@ -150,6 +150,11 @@
   --fill: var(--med-color-neutral-2);
 }
 
+:host(.med-color.med-download--finished:hover) {
+  --stroke: var(--med-color-neutral-10);
+  --fill: var(--med-color-neutral-10);
+}
+
 :host(.med-color-neutral) {
   --background-color-external: var(--med-color-neutral);
   --stroke: var(--med-color-neutral);
@@ -218,9 +223,14 @@
   --fill: var(--med-color-neutral-10);
 }
 
-:host(.med-color-feddback.med-download--finished) {
+:host(.med-color-feedback.med-download--finished) {
   --background-color-external: var(--med-color-feedback);
   --background-color-internal: var(--med-color-feedback);
   --stroke: var(--med-color-neutral-1);
   --fill: var(--med-color-neutral-1);
+}
+
+:host(.med-color-feedback.med-download--finished:hover) {
+  --stroke: var(--med-color-neutral-10);
+  --fill: var(--med-color-neutral-10);
 }
