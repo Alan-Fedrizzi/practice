@@ -1,13 +1,8 @@
 :host(.med-download) {
-  --color-neutral-1: #121616;
-  --color-neutral-2: #293132;
-  --color-neutral-3: #404d4f;
-  --color-neutral-10: #f9fafa;
-
   --border: none;
   --background-color-button: transparent;
   --background-color-external: var(--med-color-brand-4);
-  --background-color-internal: var(--color-neutral-1);
+  --background-color-internal: var(--med-color-neutral-1);
   --background-image: none;
   --height: 160px;
   --width: 160px;
@@ -88,15 +83,15 @@
 
 // state hover
 :host(.med-download:hover) {
-  --background-color-external: var(--color-neutral-10);
-  --stroke: var(--color-neutral-10);
-  --fill: var(--color-neutral-10);
+  --background-color-external: var(--med-color-neutral-10);
+  --stroke: var(--med-color-neutral-10);
+  --fill: var(--med-color-neutral-10);
 }
 
 // state active
 :host(.med-download--active) {
   --background-color-external: transparent;
-  --background-image: conic-gradient(var(--med-color-brand-4) calc(var(--porcentagem) * 1%), var(--color-neutral-3) calc(var(--porcentagem) * 1%) 100%);
+  --background-image: conic-gradient(var(--med-color-brand-4) calc(var(--porcentagem) * 1%), var(--med-color-neutral-3) calc(var(--porcentagem) * 1%) 100%);
   --display-icon-arrow: none;
   --display-icon-stop: block;
 }
@@ -104,8 +99,8 @@
 // state finished
 :host(.med-download--finished) {
   --background-color-internal: var(--med-color-brand-4);
-  --stroke: var(--color-neutral-2);
-  --fill: var(--color-neutral-2);
+  --stroke: var(--med-color-neutral-2);
+  --fill: var(--med-color-neutral-2);
 }
 
 // size
@@ -130,22 +125,22 @@
 }
 
 :host(.med-color.med-download--default:hover) {
-  --background-color-external: var(--color-neutral-10);
-  --stroke: var(--color-neutral-10);
-  --fill: var(--color-neutral-10);
+  --background-color-external: var(--med-color-neutral-10);
+  --stroke: var(--med-color-neutral-10);
+  --fill: var(--med-color-neutral-10);
 }
 
 :host(.med-color.med-download--active) {
-  --background-image: conic-gradient(var(--med-color-4) calc(var(--porcentagem) * 1%), var(--color-neutral-3) calc(var(--porcentagem) * 1%) 100%);
+  --background-image: conic-gradient(var(--med-color-4) calc(var(--porcentagem) * 1%), var(--med-color-neutral-3) calc(var(--porcentagem) * 1%) 100%);
   --stroke: var(--med-color-4);
   --fill: var(--med-color-4);
 }
 
 :host(.med-color.med-download--active:hover) {
-  --background-color-external: var(--color-neutral-10);
+  --background-color-external: var(--med-color-neutral-10);
   --background-image: none;
-  --stroke: var(--color-neutral-10);
-  --fill: var(--color-neutral-10);
+  --stroke: var(--med-color-neutral-10);
+  --fill: var(--med-color-neutral-10);
 }
 
 :host(.med-color.med-download--finished) {
