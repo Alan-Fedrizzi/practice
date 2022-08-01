@@ -118,13 +118,13 @@
 }
 
 // colors
-:host(.med-color.med-download--default) {
+:host(.med-color) {
   --background-color-external: var(--med-color-4);
   --stroke: var(--med-color-4);
   --fill: var(--med-color-4);
 }
 
-:host(.med-color.med-download--default:hover) {
+:host(.med-color:hover) {
   --background-color-external: var(--med-color-neutral-10);
   --stroke: var(--med-color-neutral-10);
   --fill: var(--med-color-neutral-10);
@@ -146,4 +146,81 @@
 :host(.med-color.med-download--finished) {
   --background-color-external: var(--med-color-4);
   --background-color-internal: var(--med-color-4);
+  --stroke: var(--med-color-neutral-2);
+  --fill: var(--med-color-neutral-2);
+}
+
+:host(.med-color-neutral) {
+  --background-color-external: var(--med-color-neutral);
+  --stroke: var(--med-color-neutral);
+  --fill: var(--med-color-neutral);
+  --background-color-internal: var(--med-color-neutral-contrast);
+}
+
+:host(.med-color-neutral:hover) {
+  --background-color-external: var(--med-color-neutral-contrast);
+  --stroke: var(--med-color-neutral-contrast);
+  --fill: var(--med-color-neutral-contrast);
+  --background-color-internal: var(--med-color-neutral);
+}
+
+:host(.med-color-neutral.med-download--active) {
+  --background-image: conic-gradient(var(--med-color-neutral) calc(var(--porcentagem) * 1%), var(--med-color-neutral-contrast) calc(var(--porcentagem) * 1%) 100%);
+  --stroke: var(--med-color-neutral);
+  --fill: var(--med-color-neutral);
+}
+
+:host(.med-color-neutral.med-download--active:hover) {
+  --background-color-external: var(--med-color-neutral-contrast);
+  --background-image: none;
+  --stroke: var(--med-color-neutral-contrast);
+  --fill: var(--med-color-neutral-contrast);
+  --background-color-internal: var(--med-color-neutral);
+}
+
+:host(.med-color-neutral.med-download--finished) {
+  --background-color-external: var(--med-color-neutral);
+  --background-color-internal: var(--med-color-neutral);
+  --stroke: var(--med-color-neutral-contrast);
+  --fill: var(--med-color-neutral-contrast);
+}
+
+:host(.med-color-neutral.med-download--finished:hover) {
+  --background-color-external: var(--med-color-neutral-contrast);
+  --background-color-internal: var(--med-color-neutral-contrast);
+  --stroke: var(--med-color-neutral);
+  --fill: var(--med-color-neutral);
+}
+
+:host(.med-color-feedback) {
+  --background-color-external: var(--med-color-feedback);
+  --stroke: var(--med-color-feedback);
+  --fill: var(--med-color-feedback);
+  --background-color-internal: var(--med-color-neutral-1);
+}
+
+:host(.med-color-feedback:hover) {
+  --background-color-external: var(--med-color-neutral-10);
+  --stroke: var(--med-color-neutral-10);
+  --fill: var(--med-color-neutral-10);
+}
+
+:host(.med-color-feedback.med-download--active) {
+  --background-image: conic-gradient(var(--med-color-feedback) calc(var(--porcentagem) * 1%), var(--med-color-neutral-3) calc(var(--porcentagem) * 1%) 100%);
+  --stroke: var(--med-color-feedback);
+  --fill: var(--med-color-feedback);
+}
+
+:host(.med-color-feedback.med-download--active:hover) {
+  --background-color-external: var(--med-color-neutral-10);
+  --background-image: none;
+  --stroke: var(--med-color-neutral-10);
+  --fill: var(--med-color-neutral-10);
+}
+
+:host(.med-color-feddback.med-download--finished) {
+  --background-color-external: var(--med-color-feedback);
+  --background-color-internal: var(--med-color-feedback);
+  --stroke: var(--med-color-neutral-1);
+  --fill: var(--med-color-neutral-1);
 }

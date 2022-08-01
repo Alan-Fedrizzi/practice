@@ -47,7 +47,7 @@ const Template = ({ size, disabled, expand, name, color }) => {
 export const Default = Template.bind({});
 Default.argTypes = {
   size: {
-    options: [undefined, 'md', 'sm', 'xs', 'xxs'],
+    options: [undefined, 'sm', 'xs', 'xxs'],
     control: {
       type: 'select',
     },
@@ -64,13 +64,44 @@ Default.argTypes = {
     },
   },
   name: {
-    options: [undefined, 'primary', 'secondary', 'tertiary'],
+    options: [undefined, 'secondary', 'tertiary'],
     control: {
       type: 'select',
     },
   },
   color: {
-    options: [undefined, 'brand', 'aula', 'material', 'questoes', 'revalida', 'provas'],
+    options: [
+      undefined,
+      'brand',
+      'aula',
+      'material',
+      'questoes',
+      'revalida',
+      'provas',
+      'neutral-1',
+      'neutral-15',
+      'neutral-2',
+      'neutral-25',
+      'neutral-3',
+      'neutral-35',
+      'neutral-4',
+      'neutral-45',
+      'neutral-5',
+      'neutral-55',
+      'neutral-6',
+      'neutral-65',
+      'neutral-7',
+      'neutral-75',
+      'neutral-8',
+      'neutral-85',
+      'neutral-9',
+      'neutral-95',
+      'neutral-10',
+      'fb-attention',
+      'fb-caution',
+      'fb-warning',
+      'fb-success',
+    ],
     control: {
       type: 'select',
     },

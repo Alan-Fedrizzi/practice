@@ -179,15 +179,16 @@
 }
 
 // colors
-:host(.med-color.med-button--primary) {
+:host(.med-color) {
   --background-color: var(--med-color-3);
 }
 
-:host(.med-color.med-button--primary:hover) {
+:host(.med-color:hover) {
   --background-color: var(--med-color-2);
 }
 
 :host(.med-color.med-button--secondary) {
+  --background-color: transparent;
   --color: var(--med-color-3);
   --border: 1px solid var(--med-color-3);
 }
@@ -196,6 +197,124 @@
   --border: 1px solid var(--med-color-2);
 }
 
+:host(.med-color.med-button--tertiary) {
+  --background-color: transparent;
+}
+
 :host(.med-color.med-button--tertiary:hover) {
   --color: var(--med-color-3);
+}
+
+// color disabled
+:host(.med-color.med-button--disabled) {
+  --background-color: var(--background-color-disabled);
+  --color: var(--color-disabled);
+  pointer-events: none;
+}
+
+:host(.med-color.med-button--secondary.med-button--disabled) {
+  --color: var(--color-neutral-5);
+  --border: 1px solid var(--color-neutral-3);
+  pointer-events: none;
+  --background-color: transparent;
+}
+
+:host(.med-color.med-button--tertiary.med-button--disabled) {
+  --color: var(--color-neutral-5);
+  pointer-events: none;
+  --background-color: transparent;
+}
+
+// neutral
+:host(.med-color-neutral) {
+  --background-color: var(--med-color-neutral);
+  --color: var(--med-color-neutral-contrast);
+}
+
+:host(.med-color-neutral:hover) {
+  --background-color: var(--med-color-neutral);
+  --color: var(--med-color-neutral-contrast);
+}
+
+:host(.med-color-neutral.med-button--secondary) {
+  --background-color: transparent;
+  --color: var(--med-color-neutral);
+  --border: 1px solid var(--med-color-neutral);
+}
+
+:host(.med-color-neutral.med-button--secondary:hover) {
+  --border: 1px solid var(--med-color-neutral-1);
+}
+
+:host(.med-color-neutral.med-button--tertiary) {
+  --background-color: transparent;
+  --color: var(--color-neutral-10);
+}
+
+:host(.med-color-neutral.med-button--tertiary:hover) {
+  --color: var(--med-color-neutral);
+}
+
+// neutral disabled
+:host(.med-color-neutral.med-button--disabled) {
+  --background-color: var(--background-color-disabled);
+  --color: var(--color-disabled);
+  pointer-events: none;
+}
+
+:host(.med-color-neutral.med-button--secondary.med-button--disabled) {
+  --color: var(--color-neutral-5);
+  --border: 1px solid var(--color-neutral-3);
+  pointer-events: none;
+  --background-color: transparent;
+}
+
+:host(.med-color-neutral.med-button--tertiary.med-button--disabled) {
+  --color: var(--color-neutral-5);
+  pointer-events: none;
+  --background-color: transparent;
+}
+
+// feedback
+:host(.med-color-feedback) {
+  --background-color: var(--med-color-feedback);
+}
+
+:host(.med-color-feedback:hover) {
+  --background-color: var(--med-color-feedback);
+}
+
+:host(.med-color-feedback.med-button--secondary) {
+  --background-color: transparent;
+  --color: var(--med-color-feedback);
+  --border: 1px solid var(--med-color-feedback);
+}
+
+:host(.med-color-feedback.med-button--tertiary) {
+  --background-color: transparent;
+  --color: var(--color-neutral-10);
+}
+
+:host(.med-color-feedback.med-button--tertiary:hover) {
+  --color: var(--med-color-feedback);
+}
+
+// feedback disabled
+:host(.med-color-feedback.med-button--disabled) {
+  --background-color: var(--background-color-disabled);
+  --color: var(--color-disabled);
+  pointer-events: none;
+}
+
+:host(.med-color-feedback.med-button--secondary.med-button--disabled) {
+  --color: var(--color-neutral-5);
+  --border: 1px solid var(--color-neutral-3);
+  pointer-events: none;
+  --background-color: transparent;
+}
+
+:host(.med-color-feedback.med-button--tertiary.med-button--disabled) {
+  --color: var(--color-neutral-5);
+  pointer-events: none;
+  --background-color: transparent;
 }

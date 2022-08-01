@@ -11,7 +11,7 @@ const Template = ({ state, size, porcentagem, color }) => {
 export const Default = Template.bind({});
 Default.argTypes = {
   state: {
-    options: [undefined, 'default', 'active', 'finished'],
+    options: [undefined, 'active', 'finished'],
     control: {
       type: 'select',
     },
