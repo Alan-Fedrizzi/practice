@@ -1,57 +1,57 @@
 :root {
-  --med-color-neutral-1: #121616;
-  --med-color-neutral-15: #1e2424;
-  --med-color-neutral-2: #293132;
-  --med-color-neutral-25: #353f40;
-  --med-color-neutral-3: #404d4f;
-  --med-color-neutral-35: #4b5b5d;
-  --med-color-neutral-4: #57686b;
-  --med-color-neutral-45: #627679;
-  --med-color-neutral-5: #6e8386;
-  --med-color-neutral-55: #7b9093;
-  --med-color-neutral-6: #899c9f;
-  --med-color-neutral-65: #97a8aa;
-  --med-color-neutral-7: #a5b3b6;
-  --med-color-neutral-75: #b3bfc1;
-  --med-color-neutral-8: #c1cbcd;
-  --med-color-neutral-85: #cfd7d8;
-  --med-color-neutral-9: #dde3e3;
-  --med-color-neutral-95: #ebefef;
-  --med-color-neutral-10: #f9fafa;
-  --med-color-brand-1: #0a515c;
-  --med-color-brand-2: #0f7888;
-  --med-color-brand-3: #14a2b8;
-  --med-color-brand-4: #47d5eb;
-  --med-color-brand-5: #a3eaf5;
-  --med-color-aula-1: #0a5c4b;
-  --med-color-aula-2: #0f8870;
-  --med-color-aula-3: #14b897;
-  --med-color-aula-4: #47ebca;
-  --med-color-aula-5: #a3f5e4;
-  --med-color-material-1: #5c2b0a;
-  --med-color-material-2: #883f0f;
-  --med-color-material-3: #b85614;
-  --med-color-material-4: #eb8947;
-  --med-color-material-5: #f5c4a3;
-  --med-color-questoes-1: #0a415c;
-  --med-color-questoes-2: #0f6088;
-  --med-color-questoes-3: #1482b8;
-  --med-color-questoes-4: #47b4eb;
-  --med-color-questoes-5: #a3daf5;
-  --med-color-revalida-1: #5c0a23;
-  --med-color-revalida-2: #880f33;
-  --med-color-revalida-3: #b81446;
-  --med-color-revalida-4: #eb4778;
-  --med-color-revalida-5: #f5a3bc;
-  --med-color-provas-1: #300a5c;
-  --med-color-provas-2: #480f88;
-  --med-color-provas-3: #6114b8;
-  --med-color-provas-4: #9447eb;
-  --med-color-provas-5: #c9a3f5;
-  --med-color-feedback-attention: #edc75e;
-  --med-color-feedback-caution: #ed975e;
-  --med-color-feedback-warning: #ed685e;
-  --med-color-feedback-success: #5eed71;
+  --med-color-neutral-1: hsl(var(--brand-hue), var(--color-neutral-saturation), var(--color-neutral-luminosity));
+  --med-color-neutral-15: hsl(var(--brand-hue), var(--color-neutral-saturation), var(--color-neutral-luminosity-step));
+  --med-color-neutral-2: hsl(var(--brand-hue), var(--color-neutral-saturation), calc(var(--color-neutral-luminosity) + 10%));
+  --med-color-neutral-25: hsl(var(--brand-hue), var(--color-neutral-saturation), calc(var(--color-neutral-luminosity-step) + 10%));
+  --med-color-neutral-3: hsl(var(--brand-hue), var(--color-neutral-saturation), calc(var(--color-neutral-luminosity) + 20%));
+  --med-color-neutral-35: hsl(var(--brand-hue), var(--color-neutral-saturation), calc(var(--color-neutral-luminosity-step) + 20%));
+  --med-color-neutral-4: hsl(var(--brand-hue), var(--color-neutral-saturation), calc(var(--color-neutral-luminosity) + 30%));
+  --med-color-neutral-45: hsl(var(--brand-hue), var(--color-neutral-saturation), calc(var(--color-neutral-luminosity-step) + 30%));
+  --med-color-neutral-5: hsl(var(--brand-hue), var(--color-neutral-saturation), calc(var(--color-neutral-luminosity) + 40%));
+  --med-color-neutral-55: hsl(var(--brand-hue), var(--color-neutral-saturation), calc(var(--color-neutral-luminosity-step) + 40%));
+  --med-color-neutral-6: hsl(var(--brand-hue), var(--color-neutral-saturation), calc(var(--color-neutral-luminosity) + 50%));
+  --med-color-neutral-65: hsl(var(--brand-hue), var(--color-neutral-saturation), calc(var(--color-neutral-luminosity-step) + 50%));
+  --med-color-neutral-7: hsl(var(--brand-hue), var(--color-neutral-saturation), calc(var(--color-neutral-luminosity) + 60%));
+  --med-color-neutral-75: hsl(var(--brand-hue), var(--color-neutral-saturation), calc(var(--color-neutral-luminosity-step) + 60%));
+  --med-color-neutral-8: hsl(var(--brand-hue), var(--color-neutral-saturation), calc(var(--color-neutral-luminosity) + 70%));
+  --med-color-neutral-85: hsl(var(--brand-hue), var(--color-neutral-saturation), calc(var(--color-neutral-luminosity-step) + 70%));
+  --med-color-neutral-9: hsl(var(--brand-hue), var(--color-neutral-saturation), calc(var(--color-neutral-luminosity) + 80%));
+  --med-color-neutral-95: hsl(var(--brand-hue), var(--color-neutral-saturation), calc(var(--color-neutral-luminosity-step) + 80%));
+  --med-color-neutral-10: hsl(var(--brand-hue), var(--color-neutral-saturation), calc(var(--color-neutral-luminosity) + 90%));
+  --med-color-brand-1: hsl(var(--brand-hue), var(--color-saturation), var(--color-luminosity-1));
+  --med-color-brand-2: hsl(var(--brand-hue), var(--color-saturation), var(--color-luminosity-2));
+  --med-color-brand-3: hsl(var(--brand-hue), var(--color-saturation), var(--color-luminosity-3));
+  --med-color-brand-4: hsl(var(--brand-hue), var(--color-saturation), var(--color-luminosity-4));
+  --med-color-brand-5: hsl(var(--brand-hue), var(--color-saturation), var(--color-luminosity-5));
+  --med-color-aula-1: hsl(var(--aula-hue), var(--color-saturation), var(--color-luminosity-1));
+  --med-color-aula-2: hsl(var(--aula-hue), var(--color-saturation), var(--color-luminosity-2));
+  --med-color-aula-3: hsl(var(--aula-hue), var(--color-saturation), var(--color-luminosity-3));
+  --med-color-aula-4: hsl(var(--aula-hue), var(--color-saturation), var(--color-luminosity-4));
+  --med-color-aula-5: hsl(var(--aula-hue), var(--color-saturation), var(--color-luminosity-5));
+  --med-color-material-1: hsl(var(--material-hue), var(--color-saturation), var(--color-luminosity-1));
+  --med-color-material-2: hsl(var(--material-hue), var(--color-saturation), var(--color-luminosity-2));
+  --med-color-material-3: hsl(var(--material-hue), var(--color-saturation), var(--color-luminosity-3));
+  --med-color-material-4: hsl(var(--material-hue), var(--color-saturation), var(--color-luminosity-4));
+  --med-color-material-5: hsl(var(--material-hue), var(--color-saturation), var(--color-luminosity-5));
+  --med-color-questoes-1: hsl(var(--questoes-hue), var(--color-saturation), var(--color-luminosity-1));
+  --med-color-questoes-2: hsl(var(--questoes-hue), var(--color-saturation), var(--color-luminosity-2));
+  --med-color-questoes-3: hsl(var(--questoes-hue), var(--color-saturation), var(--color-luminosity-3));
+  --med-color-questoes-4: hsl(var(--questoes-hue), var(--color-saturation), var(--color-luminosity-4));
+  --med-color-questoes-5: hsl(var(--questoes-hue), var(--color-saturation), var(--color-luminosity-5));
+  --med-color-revalida-1: hsl(var(--revalida-hue), var(--color-saturation), var(--color-luminosity-1));
+  --med-color-revalida-2: hsl(var(--revalida-hue), var(--color-saturation), var(--color-luminosity-2));
+  --med-color-revalida-3: hsl(var(--revalida-hue), var(--color-saturation), var(--color-luminosity-3));
+  --med-color-revalida-4: hsl(var(--revalida-hue), var(--color-saturation), var(--color-luminosity-4));
+  --med-color-revalida-5: hsl(var(--revalida-hue), var(--color-saturation), var(--color-luminosity-5));
+  --med-color-provas-1: hsl(var(--provas-hue), var(--color-saturation), var(--color-luminosity-1));
+  --med-color-provas-2: hsl(var(--provas-hue), var(--color-saturation), var(--color-luminosity-2));
+  --med-color-provas-3: hsl(var(--provas-hue), var(--color-saturation), var(--color-luminosity-3));
+  --med-color-provas-4: hsl(var(--provas-hue), var(--color-saturation), var(--color-luminosity-4));
+  --med-color-provas-5: hsl(var(--provas-hue), var(--color-saturation), var(--color-luminosity-5));
+  --med-color-feedback-attention: hsl(var(--color-feedback-hue-attention), var(--color-feedback-saturation), var(--color-feedback-luminosity));
+  --med-color-feedback-caution: hsl(var(--color-feedback-hue-caution), var(--color-feedback-saturation), var(--color-feedback-luminosity));
+  --med-color-feedback-warning: hsl(var(--color-feedback-hue-warning), var(--color-feedback-saturation), var(--color-feedback-luminosity));
+  --med-color-feedback-success: hsl(var(--color-feedback-hue-success), var(--color-feedback-saturation), var(--color-feedback-luminosity));
 }
 
 .med-color-brand {
@@ -198,19 +198,19 @@
 }
 
 .med-color-fb-attention {
-  --med-color-feedback: #edc75e;
+  --med-color-feedback: hsl(var(--color-feedback-hue-attention), var(--color-feedback-saturation), var(--color-feedback-luminosity));
 }
 
 .med-color-fb-caution {
-  --med-color-feedback: #ed975e;
+  --med-color-feedback: hsl(var(--color-feedback-hue-caution), var(--color-feedback-saturation), var(--color-feedback-luminosity));
 }
 
 .med-color-fb-warning {
-  --med-color-feedback: #ed685e;
+  --med-color-feedback: hsl(var(--color-feedback-hue-warning), var(--color-feedback-saturation), var(--color-feedback-luminosity));
 }
 
 .med-color-fb-success {
-  --med-color-feedback: #5eed71;
+  --med-color-feedback: hsl(var(--color-feedback-hue-success), var(--color-feedback-saturation), var(--color-feedback-luminosity));
 }
 
 /*# sourceMappingURL=colors.css.map */

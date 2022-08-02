@@ -1,5 +1,7 @@
 import { defineCustomElements } from '../dist/esm/loader';
 defineCustomElements();
+import '../css/themes/default.css';
+import '../css/schemes/light.css';
 import '../css/colors.css';
 
 export const parameters = {
